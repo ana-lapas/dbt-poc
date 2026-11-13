@@ -2,3 +2,51 @@
 02:31:22.889978 [debug]: Requesting license from https://ub305.us1.dbt.com/api/private/accounts/70506183176051/feature-licenses/ with 2 key IDs: ["fusion-prod-2025-11-20", "fusion-prod-2026-09-23"]
 02:31:23.590474 [debug]: License successfully retrieved from remote
 02:31:23.590778 [debug]: License cached to file for account 70506183176051
+==================== 2026-11-13T03:04:08.993425Z | 01a1d2dc-d020-7cd0-8e36-067712e7046f ====================
+03:04:08.993928 [info ]: Installing dbt project and profile setup
+03:04:08.997850 [info ]: Info Created .vscode/extensions.json with dbt extension recommendation
+03:04:08.998115 [info ]: Success Project created successfully!
+03:04:08.998141 [info ]: Info Project name: jaffle_shop
+03:04:08.998256 [info ]: Info Project directory: jaffle_shop
+03:06:00.458075 [info ]: Info Using existing profile 'finance_project'
+03:06:00.458427 [info ]: Success Set profile 'finance_project' in dbt_project.yml
+03:06:00.458511 [info ]: Validating profile inputs, adapters, and connection
+
+03:06:00.458852 [info ]: dbt 2.0.11
+03:06:00.460638 [info ]: Started loading project
+03:06:00.470655 [info ]: Loading ~/.dbt/profiles.yml
+03:06:00.476512 [info ]: Finished loading project [  0.02s]
+03:06:00.477555 [info ]: Started debugging
+03:06:00.478097 [info ]: Debugging profile: dev
+03:06:00.478153 [info ]: Debugging dbt version: 2.0.11
+03:06:00.478250 [info ]: Debugging platform: linux x86_64 (unix)
+03:06:00.478956 [info ]: Debugging adapter type: bigquery (remote)
+03:06:00.480789 [info ]: Debugging dependencies:
+  git: OK
+03:06:00.481727 [info ]: Debugging connection:
+  "database": "meu-mvp-dbt",
+  "schema": "dbt_fin_ana",
+  "priority": "interactive",
+  "method": "oauth",
+  "location": "US",
+  "dataproc_batch": null,
+  "job_execution_timeout_seconds": 300,
+  "job_retries": 1
+03:06:00.485886 [debug]: BigQuery driver resolved: bigquery 0.21.0.dev+dbt0.21.23
+03:06:07.483945 [debug]: borrow_tlocal_connection() took 6.998584582s
+03:06:07.487183 [debug]: create_debug_span(...).entered() took 144.53µs
+03:06:11.234475 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 3.747030773s
+03:06:11.234744 [debug]: reader.schema() took 16.751µs
+03:06:12.114594 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 4.627365158s
+03:06:12.115623 [debug]: concat_batches + normalize_result_column_names took 980.827µs
+03:06:12.116029 [debug]: record_current_span_status_from_attrs took 381.726µs
+03:06:12.116083 [debug]: Query executed on node unknown:
+select 1 as id
+03:06:12.116210 [debug]: drop(query_span_guard) (span exit/export) took 165.303µs
+03:06:12.116807 [debug]: adapter.execute() (full call, incl. adbc_execute_with_options) took 4.632807141s
+03:06:12.117038 [info ]: Debugging connection test: OK (11.6s)
+03:06:12.118769 [info ]: Debugged All checks passed!
+03:06:12.119128 [info ]: Finished debugging [ 11.64s]
+03:06:17.413435 [info ]: 
+==================== Execution Summary =====================
+Finished 'init' successfully for target 'dev' [2m 8s]

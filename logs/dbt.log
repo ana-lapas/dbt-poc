@@ -1,0 +1,4 @@
+==================== 2026-11-13T02:30:00.674626Z | 01a1d2bd-8ee1-74a1-9f9d-9aebc4ed3146 ====================
+02:31:22.889978 [debug]: Requesting license from https://ub305.us1.dbt.com/api/private/accounts/70506183176051/feature-licenses/ with 2 key IDs: ["fusion-prod-2025-11-20", "fusion-prod-2026-09-23"]
+02:31:23.590474 [debug]: License successfully retrieved from remote
+02:31:23.590778 [debug]: License cached to file for account 70506183176051

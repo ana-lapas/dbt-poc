@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: fct_daily_gmv
+    description: "Daily GMV and AOV metrics. Excludes returned orders."
+    columns:
+      - name: order_date
+        description: "The date of the orders."
+        tests:
+          - not_null
+          - unique
+      - name: gmv
+        description: "Gross Merchandise Value: total revenue before fees."
+        tests:
+          - not_null
+      - name: aov
+        description: "Average Order Value: GMV divided by total orders."

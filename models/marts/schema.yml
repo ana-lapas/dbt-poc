@@ -13,5 +13,3 @@ models:
         description: "Gross Merchandise Value: total revenue before fees."
         tests:
           - not_null
-      - name: aov
-        description: "Average Order Value: GMV divided by total orders."

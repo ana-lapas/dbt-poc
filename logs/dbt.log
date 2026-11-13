@@ -1,29 +1,16 @@
-==================== 2026-11-13T02:30:00.674626Z | 01a1d2bd-8ee1-74a1-9f9d-9aebc4ed3146 ====================
-02:31:22.889978 [debug]: Requesting license from https://ub305.us1.dbt.com/api/private/accounts/70506183176051/feature-licenses/ with 2 key IDs: ["fusion-prod-2025-11-20", "fusion-prod-2026-09-23"]
-02:31:23.590474 [debug]: License successfully retrieved from remote
-02:31:23.590778 [debug]: License cached to file for account 70506183176051
-==================== 2026-11-13T03:04:08.993425Z | 01a1d2dc-d020-7cd0-8e36-067712e7046f ====================
-03:04:08.993928 [info ]: Installing dbt project and profile setup
-03:04:08.997850 [info ]: Info Created .vscode/extensions.json with dbt extension recommendation
-03:04:08.998115 [info ]: Success Project created successfully!
-03:04:08.998141 [info ]: Info Project name: jaffle_shop
-03:04:08.998256 [info ]: Info Project directory: jaffle_shop
-03:06:00.458075 [info ]: Info Using existing profile 'finance_project'
-03:06:00.458427 [info ]: Success Set profile 'finance_project' in dbt_project.yml
-03:06:00.458511 [info ]: Validating profile inputs, adapters, and connection
-
-03:06:00.458852 [info ]: dbt 2.0.11
-03:06:00.460638 [info ]: Started loading project
-03:06:00.470655 [info ]: Loading ~/.dbt/profiles.yml
-03:06:00.476512 [info ]: Finished loading project [  0.02s]
-03:06:00.477555 [info ]: Started debugging
-03:06:00.478097 [info ]: Debugging profile: dev
-03:06:00.478153 [info ]: Debugging dbt version: 2.0.11
-03:06:00.478250 [info ]: Debugging platform: linux x86_64 (unix)
-03:06:00.478956 [info ]: Debugging adapter type: bigquery (remote)
-03:06:00.480789 [info ]: Debugging dependencies:
+==================== 2026-11-13T12:15:56.666248Z | 01a1d4d5-fef7-73f3-ad9e-bf71171ed1a7 ====================
+12:15:56.666415 [info ]: dbt 2.0.11
+12:15:56.666634 [info ]: Started loading project
+12:15:56.667375 [info ]: Loading ~/.dbt/profiles.yml
+12:15:56.672377 [info ]: Finished loading project [  0.01s]
+12:15:56.672472 [info ]: Started debugging
+12:15:56.672554 [info ]: Debugging profile: dev
+12:15:56.672575 [info ]: Debugging dbt version: 2.0.11
+12:15:56.672583 [info ]: Debugging platform: linux x86_64 (unix)
+12:15:56.672604 [info ]: Debugging adapter type: bigquery (remote)
+12:15:56.675314 [info ]: Debugging dependencies:
   git: OK
-03:06:00.481727 [info ]: Debugging connection:
+12:15:56.675585 [info ]: Debugging connection:
   "database": "meu-mvp-dbt",
   "schema": "dbt_fin_ana",
   "priority": "interactive",
@@ -32,21 +19,1928 @@
   "dataproc_batch": null,
   "job_execution_timeout_seconds": 300,
   "job_retries": 1
-03:06:00.485886 [debug]: BigQuery driver resolved: bigquery 0.21.0.dev+dbt0.21.23
-03:06:07.483945 [debug]: borrow_tlocal_connection() took 6.998584582s
-03:06:07.487183 [debug]: create_debug_span(...).entered() took 144.53µs
-03:06:11.234475 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 3.747030773s
-03:06:11.234744 [debug]: reader.schema() took 16.751µs
-03:06:12.114594 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 4.627365158s
-03:06:12.115623 [debug]: concat_batches + normalize_result_column_names took 980.827µs
-03:06:12.116029 [debug]: record_current_span_status_from_attrs took 381.726µs
-03:06:12.116083 [debug]: Query executed on node unknown:
+12:15:56.678162 [debug]: BigQuery driver resolved: bigquery 0.21.0.dev+dbt0.21.23
+12:15:56.720694 [debug]: borrow_tlocal_connection() took 42.575302ms
+12:15:56.722530 [debug]: create_debug_span(...).entered() took 33.502µs
+12:16:01.834786 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 5.112196031s
+12:16:01.834835 [debug]: reader.schema() took 1.319µs
+12:16:03.209309 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 6.486743424s
+12:16:03.209540 [debug]: concat_batches + normalize_result_column_names took 49.216µs
+12:16:03.209809 [debug]: record_current_span_status_from_attrs took 38.487µs
+12:16:03.209861 [debug]: Query executed on node unknown:
 select 1 as id
-03:06:12.116210 [debug]: drop(query_span_guard) (span exit/export) took 165.303µs
-03:06:12.116807 [debug]: adapter.execute() (full call, incl. adbc_execute_with_options) took 4.632807141s
-03:06:12.117038 [info ]: Debugging connection test: OK (11.6s)
-03:06:12.118769 [info ]: Debugged All checks passed!
-03:06:12.119128 [info ]: Finished debugging [ 11.64s]
-03:06:17.413435 [info ]: 
+12:16:03.209917 [debug]: drop(query_span_guard) (span exit/export) took 66.46µs
+12:16:03.210529 [debug]: adapter.execute() (full call, incl. adbc_execute_with_options) took 6.489796371s
+12:16:03.210631 [info ]: Debugging connection test: OK (6.5s)
+12:16:03.211025 [info ]: Debugged All checks passed!
+12:16:03.211138 [info ]: Finished debugging [  6.54s]
+12:16:09.152980 [info ]: 
 ==================== Execution Summary =====================
-Finished 'init' successfully for target 'dev' [2m 8s]
+Finished 'debug' successfully for target 'dev' [12.5s]
+==================== 2026-11-13T12:16:09.353244Z | 01a1d4d6-3088-72e3-ab58-787a15194411 ====================
+12:16:09.353415 [info ]: dbt 2.0.11
+12:16:09.353676 [info ]: Started loading project
+12:16:09.354429 [info ]: Loading ~/.dbt/profiles.yml
+12:16:09.360813 [info ]: Loading packages.yml
+12:16:09.360936 [info ]: Installing packages
+12:16:09.366388 [info ]: Installing dbt-labs/dbt_utils
+12:16:15.550092 [info ]:  Installed dbt-labs/dbt_utils: 1.4.1
+12:16:15.550675 [info ]:  Installed 1 package
+12:16:15.551566 [debug]:    Started loading packages
+12:16:15.553840 [debug]:     Loaded [  0.00s] packages
+12:16:15.555062 [info ]: Finished loading project [  6.20s]
+12:16:15.555465 [info ]: Started parsing (6 nodes)
+12:16:15.595156 [debug]:    Started building model nodes
+12:16:15.595166 [debug]:    Started building model nodes
+12:16:15.595235 [debug]:   Finished [  0.00s] building model nodes
+12:16:15.595297 [debug]:   Finished [  0.00s] building model nodes
+12:16:15.595670 [debug]:    Started resolving data tests
+12:16:15.595670 [debug]:    Started resolving data tests
+12:16:15.595717 [debug]:   Finished [  0.00s] resolving data tests
+12:16:15.595717 [debug]:   Finished [  0.00s] resolving data tests
+12:16:15.596150 [debug]:    Started building model nodes
+12:16:15.596159 [debug]:   Finished [  0.00s] building model nodes
+12:16:15.596445 [debug]:    Started resolving data tests
+12:16:15.596458 [debug]:   Finished [  0.00s] resolving data tests
+12:16:15.596761 [debug]: Finished parsing models/marts/schema.yml [  0.00s]
+12:16:15.598345 [debug]: Finished parsing models/intermediate/int_order_items_enriched.sql [  0.00s]
+12:16:15.600575 [debug]: Finished parsing models/marts/fct_daily_gmv.sql [  0.00s]
+12:16:15.600907 [debug]: Finished parsing models/staging/stg_order_items.sql [  0.00s]
+12:16:15.601223 [debug]: Finished parsing models/staging/stg_orders.sql [  0.00s]
+12:16:15.601289 [debug]:    Started building model nodes
+12:16:15.603441 [debug]:   Finished [  0.00s] building model nodes
+12:16:15.605057 [debug]:    Started resolving data tests
+12:16:15.605642 [debug]: Finished parsing tests/assert_gmv_is_positive.sql [  0.00s]
+12:16:15.606076 [debug]: Finished parsing target/generic_tests/not_null_fct_daily_gmv_gmv.sql [  0.00s]
+12:16:15.606364 [debug]: Finished parsing target/generic_tests/not_null_fct_daily_gmv_order_date.sql [  0.00s]
+12:16:15.607052 [debug]: Finished parsing target/generic_tests/unique_fct_daily_gmv_order_date.sql [  0.00s]
+12:16:15.608181 [debug]:   Finished [  0.00s] resolving data tests
+12:16:15.608911 [debug]:    Started typechecking macros
+12:16:15.695554 [debug]:   Finished [  0.09s] typechecking macros
+12:16:15.696618 [info ]: Finished parsing [  0.14s] (6 nodes, 0 skipped, 0 errors)
+12:16:28.401383 [debug]: processing request
+12:16:28.589309 [info ]: dbt State is enabled (endpoint https://api.state.dbt.com:443, defer_to prod)
+12:16:28.591101 [info ]: Started scheduling
+12:16:28.591368 [info ]: Finished scheduling [  0.00s]
+12:16:28.654581 [info ]: Started building task graph
+12:16:28.654782 [info ]: Finished building task graph [  0.00s]
+12:16:28.677905 [debug]: BigQuery driver resolved: bigquery 0.21.0.dev+dbt0.21.23
+12:16:29.676735 [debug]: borrow_tlocal_connection() took 1.119248ms
+12:16:29.678285 [debug]: create_debug_span(...).entered() took 31.763µs
+12:16:29.678877 [debug]: create_debug_span(...).entered() took 14.568µs
+12:16:33.317333 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 3.638384425s
+12:16:33.317397 [debug]: reader.schema() took 1.207µs
+12:16:33.977840 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 4.298461097s
+12:16:33.977908 [debug]: reader.schema() took 1.322µs
+12:16:34.747077 [debug]: batch-consume loop (for res in reader) took 1.429628928s
+12:16:34.751792 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 5.072861212s
+12:16:34.751912 [debug]: concat_batches + normalize_result_column_names took 88.658µs
+12:16:34.751929 [debug]: record_current_span_status_from_attrs took 9.232µs
+12:16:34.751949 [debug]: Query executed on node unknown:
+SELECT
+                 legacy.dataset_id AS table_schema,
+                 legacy.table_id AS table_name,
+                 IF(info.table_type = 'EXTERNAL', NULL, TIMESTAMP_MILLIS(legacy.last_modified_time)) AS last_altered,
+                 (legacy.type = 2) AS is_view
+             FROM `meu-mvp-dbt`.`dbt_fin_ana_raw`.__TABLES__ legacy
+             LEFT JOIN `meu-mvp-dbt`.`dbt_fin_ana_raw`.INFORMATION_SCHEMA.TABLES info
+               ON info.table_schema = legacy.dataset_id
+              AND info.table_name = legacy.table_id
+12:16:34.752731 [debug]: drop(query_span_guard) (span exit/export) took 790.852µs
+12:16:34.867187 [debug]: batch-consume loop (for res in reader) took 889.241778ms
+12:16:34.870114 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 5.191790678s
+12:16:34.870147 [debug]: concat_batches + normalize_result_column_names took 11.955µs
+12:16:34.870161 [debug]: record_current_span_status_from_attrs took 8.836µs
+12:16:34.870172 [debug]: Query executed on node unknown:
+SELECT UNIX_MILLIS(CURRENT_TIMESTAMP())
+12:16:34.870216 [debug]: drop(query_span_guard) (span exit/export) took 50.662µs
+12:16:34.870271 [debug]: adapter.execute() (full call, incl. adbc_execute_with_options) took 5.193498045s
+12:16:34.870522 [info ]: Started rendering (2 nodes)
+12:16:34.870635 [info ]: Started seed dbt_fin_ana_raw.raw_orders
+12:16:34.870659 [debug]: Started rendering seed dbt_fin_ana_raw.raw_orders
+12:16:34.870717 [info ]: Started seed dbt_fin_ana_raw.raw_order_items
+12:16:34.870729 [debug]: Started rendering seed dbt_fin_ana_raw.raw_order_items
+12:16:34.870848 [debug]: Finished rendering [  0.00s] seed dbt_fin_ana_raw.raw_orders [success]
+12:16:34.870982 [info ]: Started running (2 nodes)
+12:16:34.871393 [info ]: Started running seed dbt_fin_ana_raw.raw_orders
+12:16:34.871425 [debug]: Finished rendering [  0.00s] seed dbt_fin_ana_raw.raw_order_items [success]
+12:16:34.871473 [info ]: Finished rendering [  0.00s] (2 nodes, 0 skipped, 0 errors)
+12:16:34.871586 [info ]: Started running seed dbt_fin_ana_raw.raw_order_items
+12:16:35.348281 [debug]: processing request
+12:16:35.348416 [debug]: processing request
+12:16:35.348441 [debug]: processing request
+12:16:37.097513 [debug]: Applying DROP to: `meu-mvp-dbt`.`dbt_fin_ana_raw`.`raw_orders`
+12:16:37.099146 [debug]: create_debug_span(...).entered() took 18.911µs
+12:16:37.121935 [debug]: create_debug_span(...).entered() took 30.216µs
+12:16:38.607741 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 1.50848781s
+12:16:38.607810 [debug]: reader.schema() took 1.404µs
+12:16:38.616700 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 1.517520255s
+12:16:38.616738 [debug]: concat_batches + normalize_result_column_names took 3.388µs
+12:16:38.616754 [debug]: record_current_span_status_from_attrs took 9.963µs
+12:16:38.616769 [debug]: Query executed on node seed.jaffle_shop.raw_orders:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "seed.jaffle_shop.raw_orders", "profile_name": "finance_project", "target_name": "dev"} */
+
+    drop table if exists `meu-mvp-dbt`.`dbt_fin_ana_raw`.`raw_orders`
+
+12:16:38.616852 [debug]: drop(query_span_guard) (span exit/export) took 91.826µs
+12:16:38.618867 [debug]: create_debug_span(...).entered() took 16.833µs
+12:16:41.812038 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 3.193048869s
+12:16:41.812300 [debug]: reader.schema() took 1.439µs
+12:16:41.828264 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 3.209355722s
+12:16:41.828390 [debug]: concat_batches + normalize_result_column_names took 3.515µs
+12:16:41.828439 [debug]: record_current_span_status_from_attrs took 7.871µs
+12:16:41.828487 [debug]: Query executed on node seed.jaffle_shop.raw_orders:
+
+12:16:41.828544 [debug]: drop(query_span_guard) (span exit/export) took 66.396µs
+12:16:41.838085 [debug]: create_debug_span(...).entered() took 34.833µs
+12:16:42.354678 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 5.232589319s
+12:16:42.354961 [debug]: reader.schema() took 1.29µs
+12:16:42.362882 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 5.240879267s
+12:16:42.362944 [debug]: concat_batches + normalize_result_column_names took 4.023µs
+12:16:42.362962 [debug]: record_current_span_status_from_attrs took 8.639µs
+12:16:42.362976 [debug]: Query executed on node seed.jaffle_shop.raw_order_items:
+
+12:16:42.363054 [debug]: drop(query_span_guard) (span exit/export) took 85.451µs
+12:16:42.366180 [debug]: create_debug_span(...).entered() took 21.551µs
+12:16:44.256973 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 2.418520082s
+12:16:44.257032 [debug]: reader.schema() took 1.25µs
+12:16:44.704052 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 2.865547402s
+12:16:44.704170 [debug]: concat_batches + normalize_result_column_names took 39.93µs
+12:16:44.704201 [debug]: record_current_span_status_from_attrs took 23.448µs
+12:16:44.704214 [debug]: Query executed on node seed.jaffle_shop.raw_orders:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "seed.jaffle_shop.raw_orders", "profile_name": "finance_project", "target_name": "dev"} */
+
+    alter table `meu-mvp-dbt`.`dbt_fin_ana_raw`.`raw_orders` set OPTIONS()
+  
+12:16:44.704579 [debug]: drop(query_span_guard) (span exit/export) took 370.965µs
+12:16:44.707241 [debug]: Writing runtime SQL for node "seed.jaffle_shop.raw_orders"
+12:16:44.710842 [debug]: processing request
+12:16:44.787210 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 2.420818083s
+12:16:44.787259 [debug]: reader.schema() took 869ns
+12:16:44.908523 [info ]: Finished running [ 10.04s] seed dbt_fin_ana_raw.raw_orders [success]
+12:16:44.908751 [info ]:  Succeeded seed  dbt_fin_ana_raw.raw_orders (table) [1 of 2 in 10.04s]
+12:16:45.335474 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 2.969232469s
+12:16:45.335563 [debug]: concat_batches + normalize_result_column_names took 38.604µs
+12:16:45.335580 [debug]: record_current_span_status_from_attrs took 9.615µs
+12:16:45.335593 [debug]: Query executed on node seed.jaffle_shop.raw_order_items:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "seed.jaffle_shop.raw_order_items", "profile_name": "finance_project", "target_name": "dev"} */
+
+    alter table `meu-mvp-dbt`.`dbt_fin_ana_raw`.`raw_order_items` set OPTIONS()
+  
+12:16:45.335625 [debug]: drop(query_span_guard) (span exit/export) took 38.718µs
+12:16:45.337391 [debug]: Writing runtime SQL for node "seed.jaffle_shop.raw_order_items"
+12:16:45.339707 [debug]: processing request
+12:16:45.543860 [info ]: Finished running [ 10.67s] seed dbt_fin_ana_raw.raw_order_items [success]
+12:16:45.543970 [info ]: Finished running [ 10.67s] (2 nodes, 0 skipped, 0 errors)
+12:16:45.544030 [info ]:  Succeeded seed  dbt_fin_ana_raw.raw_order_items (table) [2 of 2 in 10.67s]
+12:16:45.544845 [debug]: processing request
+12:16:56.033615 [info ]: 
+==================== Execution Summary =====================
+Finished 'seed' successfully for target 'dev' [46.7s]
+Processed: 2 seeds
+Summary: 2 total | 2 success
+==================== 2026-11-13T12:16:56.288027Z | 01a1d4d6-e7de-7882-840c-9630a82630f4 ====================
+12:16:56.288178 [info ]: dbt 2.0.11
+12:16:56.288423 [info ]: Started loading project
+12:16:56.289107 [info ]: Loading ~/.dbt/profiles.yml
+12:16:56.294481 [info ]: Loading packages.yml
+12:16:56.295142 [debug]:    Started loading packages
+12:16:56.296962 [debug]:     Loaded [  0.00s] packages
+12:16:56.298571 [info ]: Finished loading project [  0.01s]
+12:16:56.299525 [info ]: Started parsing (6 nodes)
+12:16:56.352364 [debug]:    Started building model nodes
+12:16:56.352414 [debug]:   Finished [  0.00s] building model nodes
+12:16:56.352730 [debug]:    Started building model nodes
+12:16:56.352792 [debug]:   Finished [  0.00s] building model nodes
+12:16:56.352892 [debug]:    Started resolving data tests
+12:16:56.352928 [debug]:   Finished [  0.00s] resolving data tests
+12:16:56.353242 [debug]:    Started building model nodes
+12:16:56.353254 [debug]:   Finished [  0.00s] building model nodes
+12:16:56.353588 [debug]:    Started resolving data tests
+12:16:56.353644 [debug]:   Finished [  0.00s] resolving data tests
+12:16:56.353684 [debug]:    Started resolving data tests
+12:16:56.353716 [debug]:   Finished [  0.00s] resolving data tests
+12:16:56.354168 [debug]: Finished parsing models/marts/schema.yml [  0.00s]
+12:16:56.356410 [debug]: Finished parsing models/intermediate/int_order_items_enriched.sql [  0.00s]
+12:16:56.357769 [debug]: Finished parsing models/marts/fct_daily_gmv.sql [  0.00s]
+12:16:56.358591 [debug]: Finished parsing models/staging/stg_order_items.sql [  0.00s]
+12:16:56.359308 [debug]: Finished parsing models/staging/stg_orders.sql [  0.00s]
+12:16:56.359616 [debug]:    Started building model nodes
+12:16:56.364876 [debug]:   Finished [  0.01s] building model nodes
+12:16:56.366253 [debug]:    Started resolving data tests
+12:16:56.367066 [debug]: Finished parsing tests/assert_gmv_is_positive.sql [  0.00s]
+12:16:56.368165 [debug]: Finished parsing target/generic_tests/not_null_fct_daily_gmv_gmv.sql [  0.00s]
+12:16:56.368979 [debug]: Finished parsing target/generic_tests/not_null_fct_daily_gmv_order_date.sql [  0.00s]
+12:16:56.370239 [debug]: Finished parsing target/generic_tests/unique_fct_daily_gmv_order_date.sql [  0.00s]
+12:16:56.371937 [debug]:   Finished [  0.01s] resolving data tests
+12:16:56.372936 [debug]:    Started typechecking macros
+12:16:56.487969 [debug]:   Finished [  0.12s] typechecking macros
+12:16:56.489076 [info ]: Finished parsing [  0.19s] (6 nodes, 0 skipped, 0 errors)
+12:17:02.294655 [debug]: processing request
+12:17:02.478763 [info ]: dbt State is enabled (endpoint https://api.state.dbt.com:443, defer_to prod)
+12:17:02.480061 [info ]: Started scheduling
+12:17:02.480260 [info ]: Finished scheduling [  0.00s]
+12:17:02.481885 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "meu-mvp-dbt", schema: "dbt_fin_ana_raw", table: "raw_orders" }) and interval: None
+12:17:02.481908 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "meu-mvp-dbt", schema: "dbt_fin_ana_raw", table: "raw_order_items" }) and interval: None
+12:17:02.483987 [info ]:    Started downloading referenced relations (1 items)
+12:17:02.484888 [debug]: BigQuery driver resolved: bigquery 0.21.0.dev+dbt0.21.23
+12:17:02.510726 [debug]:    Started downloading `meu-mvp-dbt`.`dbt_fin_ana`
+12:17:04.665888 [debug]: Downloaded [  2.16s] `meu-mvp-dbt`.`dbt_fin_ana`
+12:17:04.666450 [info ]:   Finished [  2.18s] downloading referenced relations (1 items)
+12:17:04.701736 [info ]: Started building task graph
+12:17:04.701990 [info ]: Finished building task graph [  0.00s]
+12:17:05.009057 [debug]: processing request
+12:17:05.010589 [debug]: borrow_tlocal_connection() took 3.579968ms
+12:17:05.016497 [debug]: create_debug_span(...).entered() took 32.732µs
+12:17:05.017940 [debug]: create_debug_span(...).entered() took 19.228µs
+12:17:05.018261 [debug]: create_debug_span(...).entered() took 9.604µs
+12:17:08.679144 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 3.660814768s
+12:17:08.679463 [debug]: reader.schema() took 1.432µs
+12:17:08.741610 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 3.723035583s
+12:17:08.741675 [debug]: reader.schema() took 1.406µs
+12:17:14.583757 [debug]: batch-consume loop (for res in reader) took 5.842050855s
+12:17:14.586615 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 9.568331871s
+12:17:14.586679 [debug]: concat_batches + normalize_result_column_names took 44.475µs
+12:17:14.586714 [debug]: record_current_span_status_from_attrs took 8.436µs
+12:17:14.586724 [debug]: Query executed on node unknown:
+SELECT
+                 legacy.dataset_id AS table_schema,
+                 legacy.table_id AS table_name,
+                 IF(info.table_type = 'EXTERNAL', NULL, TIMESTAMP_MILLIS(legacy.last_modified_time)) AS last_altered,
+                 (legacy.type = 2) AS is_view
+             FROM `meu-mvp-dbt`.`dbt_fin_ana_raw`.__TABLES__ legacy
+             LEFT JOIN `meu-mvp-dbt`.`dbt_fin_ana_raw`.INFORMATION_SCHEMA.TABLES info
+               ON info.table_schema = legacy.dataset_id
+              AND info.table_name = legacy.table_id
+12:17:14.586773 [debug]: drop(query_span_guard) (span exit/export) took 55.105µs
+12:17:14.773017 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 9.756439475s
+12:17:14.773078 [debug]: reader.schema() took 1.425µs
+12:17:15.092270 [debug]: batch-consume loop (for res in reader) took 6.412772s
+12:17:15.095981 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 10.078005282s
+12:17:15.096037 [debug]: concat_batches + normalize_result_column_names took 31.143µs
+12:17:15.096051 [debug]: record_current_span_status_from_attrs took 8.36µs
+12:17:15.096063 [debug]: Query executed on node unknown:
+SELECT
+                 legacy.dataset_id AS table_schema,
+                 legacy.table_id AS table_name,
+                 IF(info.table_type = 'EXTERNAL', NULL, TIMESTAMP_MILLIS(legacy.last_modified_time)) AS last_altered,
+                 (legacy.type = 2) AS is_view
+             FROM `meu-mvp-dbt`.`dbt_fin_ana`.__TABLES__ legacy
+             LEFT JOIN `meu-mvp-dbt`.`dbt_fin_ana`.INFORMATION_SCHEMA.TABLES info
+               ON info.table_schema = legacy.dataset_id
+              AND info.table_name = legacy.table_id
+12:17:15.096090 [debug]: drop(query_span_guard) (span exit/export) took 33.43µs
+12:17:15.608469 [debug]: batch-consume loop (for res in reader) took 835.351795ms
+12:17:15.611686 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 10.595161885s
+12:17:15.611718 [debug]: concat_batches + normalize_result_column_names took 10.623µs
+12:17:15.611733 [debug]: record_current_span_status_from_attrs took 9.274µs
+12:17:15.611745 [debug]: Query executed on node unknown:
+SELECT UNIX_MILLIS(CURRENT_TIMESTAMP())
+12:17:15.611794 [debug]: drop(query_span_guard) (span exit/export) took 55.257µs
+12:17:15.611858 [debug]: adapter.execute() (full call, incl. adbc_execute_with_options) took 10.601235765s
+12:17:15.612079 [info ]: Started rendering (4 nodes)
+12:17:15.612367 [info ]: Started model dbt_fin_ana.stg_orders
+12:17:15.612398 [debug]: Started rendering model dbt_fin_ana.stg_orders
+12:17:15.612642 [info ]: Started model dbt_fin_ana.stg_order_items
+12:17:15.612670 [debug]: Started rendering model dbt_fin_ana.stg_order_items
+12:17:15.614688 [debug]: Compiled SQL for node model.jaffle_shop.stg_order_items at target/compiled/jaffle_shop/models/staging/stg_order_items.sql
+12:17:15.614738 [debug]: Compiled SQL for node model.jaffle_shop.stg_orders at target/compiled/jaffle_shop/models/staging/stg_orders.sql
+12:17:15.614826 [debug]: Finished rendering [  0.00s] model dbt_fin_ana.stg_order_items [success]
+12:17:15.614933 [info ]: Started analyzing (4 nodes)
+12:17:15.614981 [debug]: Started analyzing model dbt_fin_ana.stg_order_items
+12:17:15.615033 [debug]: Finished rendering [  0.00s] model dbt_fin_ana.stg_orders [success]
+12:17:15.615076 [debug]: Started analyzing model dbt_fin_ana.stg_orders
+12:17:15.995837 [debug]: Schema hydration: registering 1 schemas from db_runner
+12:17:15.995850 [debug]: Schema hydration: registering 1 schemas from db_runner
+12:17:15.995908 [debug]: Schema hydration: parsing FQN string '`meu-mvp-dbt`.`dbt_fin_ana_raw`.`raw_order_items`'
+12:17:15.995982 [debug]: Schema hydration: registering cfqn=meu-mvp-dbt.dbt_fin_ana_raw.raw_order_items (catalog='meu-mvp-dbt', schema='dbt_fin_ana_raw', table='raw_order_items')
+12:17:15.996096 [debug]: Schema hydration: registration succeeded for meu-mvp-dbt.dbt_fin_ana_raw.raw_order_items, exists_check=true
+12:17:15.996332 [debug]: Schema hydration: parsing FQN string '`meu-mvp-dbt`.`dbt_fin_ana_raw`.`raw_orders`'
+12:17:15.996475 [debug]: Schema hydration: registering cfqn=meu-mvp-dbt.dbt_fin_ana_raw.raw_orders (catalog='meu-mvp-dbt', schema='dbt_fin_ana_raw', table='raw_orders')
+12:17:15.996657 [debug]: Schema hydration: registration succeeded for meu-mvp-dbt.dbt_fin_ana_raw.raw_orders, exists_check=true
+12:17:16.015168 [debug]: Finished analyzing [  0.40s] model dbt_fin_ana.stg_orders [success]
+12:17:16.015282 [info ]: Started running (4 nodes)
+12:17:16.015323 [info ]: Started running model dbt_fin_ana.stg_orders
+12:17:16.015353 [debug]: Finished analyzing [  0.40s] model dbt_fin_ana.stg_order_items [success]
+12:17:16.015385 [info ]: Started model dbt_fin_ana.int_order_items_enriched
+12:17:16.015395 [debug]: Started rendering model dbt_fin_ana.int_order_items_enriched
+12:17:16.015405 [info ]: Started running model dbt_fin_ana.stg_order_items
+12:17:16.015616 [debug]: processing request
+12:17:16.016011 [debug]: processing request
+12:17:16.017219 [debug]: Compiled SQL for node model.jaffle_shop.int_order_items_enriched at target/compiled/jaffle_shop/models/intermediate/int_order_items_enriched.sql
+12:17:16.017502 [debug]: Finished rendering [  0.00s] model dbt_fin_ana.int_order_items_enriched [success]
+12:17:16.017578 [debug]: Started analyzing model dbt_fin_ana.int_order_items_enriched
+12:17:16.025511 [debug]: Finished analyzing [  0.01s] model dbt_fin_ana.int_order_items_enriched [success]
+12:17:16.025617 [info ]: Started model dbt_fin_ana.fct_daily_gmv
+12:17:16.025641 [debug]: Started rendering model dbt_fin_ana.fct_daily_gmv
+12:17:16.027450 [debug]: Compiled SQL for node model.jaffle_shop.fct_daily_gmv at target/compiled/jaffle_shop/models/marts/fct_daily_gmv.sql
+12:17:16.027566 [debug]: Finished rendering [  0.00s] model dbt_fin_ana.fct_daily_gmv [success]
+12:17:16.027619 [info ]: Finished rendering [  0.42s] (4 nodes, 0 skipped, 0 errors)
+12:17:16.027656 [debug]: Started analyzing model dbt_fin_ana.fct_daily_gmv
+12:17:16.040382 [debug]: Finished analyzing [  0.01s] model dbt_fin_ana.fct_daily_gmv [success]
+12:17:16.040529 [info ]: Finished analyzing [  0.43s] (4 nodes, 0 skipped, 0 errors)
+12:17:16.349345 [debug]: Writing runtime sql for node "model.jaffle_shop.stg_order_items"
+12:17:16.349953 [debug]: Writing runtime sql for node "model.jaffle_shop.stg_orders"
+12:17:16.350771 [debug]: create_debug_span(...).entered() took 17.855µs
+12:17:16.351590 [debug]: create_debug_span(...).entered() took 13.343µs
+12:17:18.685617 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 2.333929431s
+12:17:18.685693 [debug]: reader.schema() took 1.071µs
+12:17:18.693656 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 2.342040163s
+12:17:18.693707 [debug]: concat_batches + normalize_result_column_names took 24.893µs
+12:17:18.693723 [debug]: record_current_span_status_from_attrs took 8.64µs
+12:17:18.693737 [debug]: Query executed on node model.jaffle_shop.stg_orders:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.jaffle_shop.stg_orders", "profile_name": "finance_project", "target_name": "dev"} */
+
+
+  create or replace view `meu-mvp-dbt`.`dbt_fin_ana`.`stg_orders`
+  OPTIONS()
+  as select
+    order_id,
+    customer_id,
+    cast(order_date as date) as order_date,
+    status
+from `meu-mvp-dbt`.`dbt_fin_ana_raw`.`raw_orders`;
+
+
+12:17:18.693904 [debug]: drop(query_span_guard) (span exit/export) took 174.105µs
+12:17:18.696796 [debug]: processing request
+12:17:18.922979 [info ]: Finished running [  2.91s] model dbt_fin_ana.stg_orders [success]
+12:17:18.923088 [info ]:  Succeeded model dbt_fin_ana.stg_orders (view) [1 of 4 in 3.31s]
+12:17:19.791049 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 3.440130586s
+12:17:19.791102 [debug]: reader.schema() took 1.177µs
+12:17:19.798867 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 3.44805014s
+12:17:19.799004 [debug]: concat_batches + normalize_result_column_names took 28.328µs
+12:17:19.799034 [debug]: record_current_span_status_from_attrs took 9.61µs
+12:17:19.799051 [debug]: Query executed on node model.jaffle_shop.stg_order_items:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.jaffle_shop.stg_order_items", "profile_name": "finance_project", "target_name": "dev"} */
+
+
+  create or replace view `meu-mvp-dbt`.`dbt_fin_ana`.`stg_order_items`
+  OPTIONS()
+  as select
+    order_id,
+    product_id,
+    cast(quantity as int) as quantity,
+    cast(price as numeric) as price
+from `meu-mvp-dbt`.`dbt_fin_ana_raw`.`raw_order_items`;
+
+
+12:17:19.799171 [debug]: drop(query_span_guard) (span exit/export) took 127.082µs
+12:17:19.803348 [debug]: processing request
+12:17:20.008200 [debug]: processing request
+12:17:20.028330 [info ]: Finished running [  4.01s] model dbt_fin_ana.stg_order_items [success]
+12:17:20.028414 [info ]:  Succeeded model dbt_fin_ana.stg_order_items (view) [2 of 4 in 4.41s]
+12:17:20.028511 [info ]: Started running model dbt_fin_ana.int_order_items_enriched
+12:17:20.028788 [debug]: processing request
+12:17:20.326472 [debug]: Writing runtime sql for node "model.jaffle_shop.int_order_items_enriched"
+12:17:20.328134 [debug]: create_debug_span(...).entered() took 23.613µs
+12:17:22.965351 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 2.63704994s
+12:17:22.965402 [debug]: reader.schema() took 1.406µs
+12:17:22.975617 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 2.647441019s
+12:17:22.975694 [debug]: concat_batches + normalize_result_column_names took 38.035µs
+12:17:22.975712 [debug]: record_current_span_status_from_attrs took 10.255µs
+12:17:22.975728 [debug]: Query executed on node model.jaffle_shop.int_order_items_enriched:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.jaffle_shop.int_order_items_enriched", "profile_name": "finance_project", "target_name": "dev"} */
+
+
+  create or replace view `meu-mvp-dbt`.`dbt_fin_ana`.`int_order_items_enriched`
+  OPTIONS()
+  as with order_items as (
+    select * from `meu-mvp-dbt`.`dbt_fin_ana`.`stg_order_items`
+),
+orders as (
+    select * from `meu-mvp-dbt`.`dbt_fin_ana`.`stg_orders`
+)
+select
+    oi.order_id,
+    oi.product_id,
+    oi.quantity,
+    oi.price,
+    (oi.quantity * oi.price) as line_total,
+    o.order_date,
+    o.status
+from order_items oi
+left join orders o on oi.order_id = o.order_id;
+
+
+12:17:22.975816 [debug]: drop(query_span_guard) (span exit/export) took 45.194µs
+12:17:22.978102 [debug]: processing request
+12:17:23.204142 [info ]: Finished running [  3.18s] model dbt_fin_ana.int_order_items_enriched [success]
+12:17:23.204523 [info ]:  Succeeded model dbt_fin_ana.int_order_items_enriched (view) [3 of 4 in 3.18s]
+12:17:23.204758 [info ]: Started running model dbt_fin_ana.fct_daily_gmv
+12:17:23.206543 [debug]: create_debug_span(...).entered() took 27.347µs
+12:17:25.008437 [debug]: processing request
+12:17:26.452800 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 3.246067526s
+12:17:26.452849 [debug]: reader.schema() took 1.508µs
+12:17:26.457887 [debug]: batch-consume loop (for res in reader) took 5.018648ms
+12:17:26.463160 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 3.256568864s
+12:17:26.463279 [debug]: concat_batches + normalize_result_column_names took 36.038µs
+12:17:26.463295 [debug]: record_current_span_status_from_attrs took 8.898µs
+12:17:26.463308 [debug]: Query executed on node unknown:
+SELECT
+    table_catalog,
+    table_schema,
+    table_name,
+    view_definition
+FROM `meu-mvp-dbt`.`dbt_fin_ana_raw`.INFORMATION_SCHEMA.VIEWS
+WHERE table_name IN ('raw_order_items', 'raw_orders')
+12:17:26.463345 [debug]: drop(query_span_guard) (span exit/export) took 42.462µs
+12:17:26.463902 [debug]: processing request
+12:17:26.860765 [debug]: Invalid value for on_schema_change (None) specified. Setting default value of ignore.
+12:17:26.864821 [debug]: Writing runtime sql for node "model.jaffle_shop.fct_daily_gmv"
+12:17:26.866626 [debug]: create_debug_span(...).entered() took 24.721µs
+12:17:27.989852 [debug]: Query executed on node model.jaffle_shop.fct_daily_gmv:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.jaffle_shop.fct_daily_gmv", "profile_name": "finance_project", "target_name": "dev"} */
+
+
+    create table `meu-mvp-dbt`.`dbt_fin_ana`.`fct_daily_gmv`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      
+
+with order_details as (
+    select * from `meu-mvp-dbt`.`dbt_fin_ana`.`int_order_items_enriched`
+    where status = 'completed'
+),
+daily_metrics as (
+    select
+        order_date,
+        sum(line_total) as gmv,
+        count(distinct order_id) as total_orders,
+        sum(line_total) / nullif(count(distinct order_id), 0) as aov
+    from order_details
+    group by 1
+)
+
+select * from daily_metrics
+
+
+    );
+12:17:28.992396 [error]: [DbDriverFailed (dbt1308)]: Database Error in model fct_daily_gmv (target/run/jaffle_shop/models/marts/fct_daily_gmv.sql)
+  [BigQuery] googleapi: Error 400: Invalid date: '1/1/2024', invalidQuery (Query: https://console.cloud.google.com/bigquery?project=meu-mvp-dbt&j=bq:US:adbc-a2ffb8bb-f2dd-41c4-af86-748aded93daf&page=queryresults)
+  (in run/jaffle_shop/models/marts/fct_daily_gmv.sql)
+12:17:28.992604 [info ]: Finished running [  5.79s] model dbt_fin_ana.fct_daily_gmv [error]
+12:17:28.992768 [info ]: Finished running [ 12.98s] (4 nodes, 0 skipped, 1 errors)
+12:17:28.993054 [info ]:     Failed model dbt_fin_ana.fct_daily_gmv (incremental) [4 of 4 in 5.80s]
+12:17:28.994077 [debug]: processing request
+12:17:36.187451 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' with 1 error for target 'dev' [39.9s]
+Processed: 4 models
+Summary: 4 total | 3 success | 1 error
+==================== 2026-11-13T12:17:36.418103Z | 01a1d4d7-84a1-7c12-9c2f-e579da6d2cbd ====================
+12:17:36.418286 [info ]: dbt 2.0.11
+12:17:36.418504 [info ]: Started loading project
+12:17:36.419170 [info ]: Loading ~/.dbt/profiles.yml
+12:17:36.425425 [info ]: Loading packages.yml
+12:17:36.426101 [debug]:    Started loading packages
+12:17:36.428641 [debug]:     Loaded [  0.00s] packages
+12:17:36.429482 [info ]: Finished loading project [  0.01s]
+12:17:36.430059 [info ]: Started parsing (6 nodes)
+12:17:36.481337 [debug]:    Started building model nodes
+12:17:36.481393 [debug]:   Finished [  0.00s] building model nodes
+12:17:36.481896 [debug]:    Started resolving data tests
+12:17:36.481934 [debug]:   Finished [  0.00s] resolving data tests
+12:17:36.482661 [debug]:    Started building model nodes
+12:17:36.482690 [debug]:   Finished [  0.00s] building model nodes
+12:17:36.483280 [debug]:    Started resolving data tests
+12:17:36.483302 [debug]:   Finished [  0.00s] resolving data tests
+12:17:36.483735 [debug]:    Started building model nodes
+12:17:36.483747 [debug]:   Finished [  0.00s] building model nodes
+12:17:36.484188 [debug]:    Started resolving data tests
+12:17:36.484236 [debug]:   Finished [  0.00s] resolving data tests
+12:17:36.484570 [debug]: Finished parsing models/marts/schema.yml [  0.00s]
+12:17:36.486673 [debug]: Finished parsing models/intermediate/int_order_items_enriched.sql [  0.00s]
+12:17:36.487308 [debug]: Finished parsing models/marts/fct_daily_gmv.sql [  0.00s]
+12:17:36.487625 [debug]: Finished parsing models/staging/stg_order_items.sql [  0.00s]
+12:17:36.487954 [debug]: Finished parsing models/staging/stg_orders.sql [  0.00s]
+12:17:36.488038 [debug]:    Started building model nodes
+12:17:36.491016 [debug]:   Finished [  0.00s] building model nodes
+12:17:36.492846 [debug]:    Started resolving data tests
+12:17:36.493322 [debug]: Finished parsing tests/assert_gmv_is_positive.sql [  0.00s]
+12:17:36.494233 [debug]: Finished parsing target/generic_tests/not_null_fct_daily_gmv_gmv.sql [  0.00s]
+12:17:36.495674 [debug]: Finished parsing target/generic_tests/not_null_fct_daily_gmv_order_date.sql [  0.00s]
+12:17:36.496143 [debug]: Finished parsing target/generic_tests/unique_fct_daily_gmv_order_date.sql [  0.00s]
+12:17:36.497529 [debug]:   Finished [  0.00s] resolving data tests
+12:17:36.499259 [debug]:    Started typechecking macros
+12:17:36.618977 [debug]:   Finished [  0.12s] typechecking macros
+12:17:36.619978 [info ]: Finished parsing [  0.19s] (6 nodes, 0 skipped, 0 errors)
+12:17:42.230490 [debug]: processing request
+12:17:42.392488 [info ]: dbt State is enabled (endpoint https://api.state.dbt.com:443, defer_to prod)
+12:17:42.394290 [info ]: Started scheduling
+12:17:42.394519 [info ]: Finished scheduling [  0.00s]
+12:17:42.396957 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "meu-mvp-dbt", schema: "dbt_fin_ana", table: "fct_daily_gmv" }) and interval: None
+12:17:42.441315 [info ]: Started building task graph
+12:17:42.441756 [info ]: Finished building task graph [  0.00s]
+12:17:42.446927 [debug]: BigQuery driver resolved: bigquery 0.21.0.dev+dbt0.21.23
+12:17:42.447290 [debug]: processing request
+12:17:42.474471 [debug]: borrow_tlocal_connection() took 27.574745ms
+12:17:42.475980 [debug]: create_debug_span(...).entered() took 30.912µs
+12:17:42.476152 [debug]: create_debug_span(...).entered() took 35.99µs
+12:17:42.478879 [debug]: create_debug_span(...).entered() took 22.867µs
+12:17:44.278255 [debug]: Query executed on node unknown:
+SELECT
+                 legacy.dataset_id AS table_schema,
+                 legacy.table_id AS table_name,
+                 IF(info.table_type = 'EXTERNAL', NULL, TIMESTAMP_MILLIS(legacy.last_modified_time)) AS last_altered,
+                 (legacy.type = 2) AS is_view
+             FROM `meu-mvp-dbt`.`dbt_fin_ana_dbt_test__audit`.__TABLES__ legacy
+             LEFT JOIN `meu-mvp-dbt`.`dbt_fin_ana_dbt_test__audit`.INFORMATION_SCHEMA.TABLES info
+               ON info.table_schema = legacy.dataset_id
+              AND info.table_name = legacy.table_id
+12:17:46.056787 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 3.577848904s
+12:17:46.056786 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 3.580570845s
+12:17:46.056841 [debug]: reader.schema() took 1.315µs
+12:17:46.056977 [debug]: reader.schema() took 482ns
+12:17:46.901488 [debug]: batch-consume loop (for res in reader) took 844.480895ms
+12:17:46.906042 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 4.429846295s
+12:17:46.906363 [debug]: concat_batches + normalize_result_column_names took 195.53µs
+12:17:46.906545 [debug]: record_current_span_status_from_attrs took 165.83µs
+12:17:46.906634 [debug]: Query executed on node unknown:
+SELECT UNIX_MILLIS(CURRENT_TIMESTAMP())
+12:17:46.907058 [debug]: drop(query_span_guard) (span exit/export) took 426.181µs
+12:17:46.907129 [debug]: adapter.execute() (full call, incl. adbc_execute_with_options) took 4.432624577s
+12:17:46.907324 [info ]: Started rendering (4 nodes)
+12:17:46.907398 [info ]: Started test dbt_fin_ana_dbt_test__audit.unique_fct_daily_gmv_order_date
+12:17:46.907412 [debug]: Started rendering test dbt_fin_ana_dbt_test__audit.unique_fct_daily_gmv_order_date
+12:17:46.907442 [info ]: Started test dbt_fin_ana_dbt_test__audit.not_null_fct_daily_gmv_order_date
+12:17:46.907449 [debug]: Started rendering test dbt_fin_ana_dbt_test__audit.not_null_fct_daily_gmv_order_date
+12:17:46.907462 [info ]: Started test dbt_fin_ana_dbt_test__audit.not_null_fct_daily_gmv_gmv
+12:17:46.907469 [debug]: Started rendering test dbt_fin_ana_dbt_test__audit.not_null_fct_daily_gmv_gmv
+12:17:46.907483 [info ]: Started test dbt_fin_ana_dbt_test__audit.assert_gmv_is_positive
+12:17:46.907490 [debug]: Started rendering test dbt_fin_ana_dbt_test__audit.assert_gmv_is_positive
+12:17:46.910429 [debug]: Compiled SQL for node test.jaffle_shop.not_null_fct_daily_gmv_gmv.499dcbaf83 at target/compiled/jaffle_shop/target/generic_tests/not_null_fct_daily_gmv_gmv.sql
+12:17:46.910883 [debug]: Compiled SQL for node test.jaffle_shop.assert_gmv_is_positive at target/compiled/jaffle_shop/tests/assert_gmv_is_positive.sql
+12:17:46.911016 [debug]: Finished rendering [  0.00s] test dbt_fin_ana_dbt_test__audit.not_null_fct_daily_gmv_gmv [success]
+12:17:46.911134 [info ]: Started analyzing (4 nodes)
+12:17:46.911215 [debug]: Started analyzing test dbt_fin_ana_dbt_test__audit.not_null_fct_daily_gmv_gmv
+12:17:46.911244 [debug]: Finished rendering [  0.00s] test dbt_fin_ana_dbt_test__audit.assert_gmv_is_positive [success]
+12:17:46.911282 [debug]: Started analyzing test dbt_fin_ana_dbt_test__audit.assert_gmv_is_positive
+12:17:46.912146 [debug]: Compiled SQL for node test.jaffle_shop.not_null_fct_daily_gmv_order_date.d99d78689d at target/compiled/jaffle_shop/target/generic_tests/not_null_fct_daily_gmv_order_date.sql
+12:17:46.912327 [debug]: Compiled SQL for node test.jaffle_shop.unique_fct_daily_gmv_order_date.df3dd9f029 at target/compiled/jaffle_shop/target/generic_tests/unique_fct_daily_gmv_order_date.sql
+12:17:46.916342 [debug]: Finished analyzing [  0.01s] test dbt_fin_ana_dbt_test__audit.not_null_fct_daily_gmv_gmv [success]
+12:17:46.917184 [info ]: Started running (4 nodes)
+12:17:46.917225 [info ]: Started running test dbt_fin_ana_dbt_test__audit.not_null_fct_daily_gmv_gmv
+12:17:46.917263 [debug]: Finished rendering [  0.01s] test dbt_fin_ana_dbt_test__audit.not_null_fct_daily_gmv_order_date [success]
+12:17:46.917318 [debug]: Started analyzing test dbt_fin_ana_dbt_test__audit.not_null_fct_daily_gmv_order_date
+12:17:46.918028 [debug]: create_debug_span(...).entered() took 10.731µs
+12:17:46.917653 [debug]: Finished rendering [  0.01s] test dbt_fin_ana_dbt_test__audit.unique_fct_daily_gmv_order_date [success]
+12:17:46.918138 [info ]: Finished rendering [  0.01s] (4 nodes, 0 skipped, 0 errors)
+12:17:46.918495 [debug]: Started analyzing test dbt_fin_ana_dbt_test__audit.unique_fct_daily_gmv_order_date
+12:17:46.918520 [debug]: Finished analyzing [  0.01s] test dbt_fin_ana_dbt_test__audit.assert_gmv_is_positive [success]
+12:17:46.918710 [info ]: Started running test dbt_fin_ana_dbt_test__audit.assert_gmv_is_positive
+12:17:46.918914 [debug]: Finished analyzing [  0.00s] test dbt_fin_ana_dbt_test__audit.not_null_fct_daily_gmv_order_date [success]
+12:17:46.918975 [info ]: Started running test dbt_fin_ana_dbt_test__audit.not_null_fct_daily_gmv_order_date
+12:17:46.923418 [debug]: Finished analyzing [  0.00s] test dbt_fin_ana_dbt_test__audit.unique_fct_daily_gmv_order_date [success]
+12:17:46.923481 [info ]: Finished analyzing [  0.01s] (4 nodes, 0 skipped, 0 errors)
+12:17:46.923514 [info ]: Started running test dbt_fin_ana_dbt_test__audit.unique_fct_daily_gmv_order_date
+12:17:46.923755 [debug]: create_debug_span(...).entered() took 10.475µs
+12:17:46.926167 [debug]: create_debug_span(...).entered() took 23.281µs
+12:17:47.170106 [debug]: batch-consume loop (for res in reader) took 1.113229588s
+12:17:47.174820 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 4.695915295s
+12:17:47.174898 [debug]: concat_batches + normalize_result_column_names took 51.935µs
+12:17:47.174916 [debug]: record_current_span_status_from_attrs took 9.279µs
+12:17:47.174931 [debug]: Query executed on node unknown:
+SELECT
+                 legacy.dataset_id AS table_schema,
+                 legacy.table_id AS table_name,
+                 IF(info.table_type = 'EXTERNAL', NULL, TIMESTAMP_MILLIS(legacy.last_modified_time)) AS last_altered,
+                 (legacy.type = 2) AS is_view
+             FROM `meu-mvp-dbt`.`dbt_fin_ana`.__TABLES__ legacy
+             LEFT JOIN `meu-mvp-dbt`.`dbt_fin_ana`.INFORMATION_SCHEMA.TABLES info
+               ON info.table_schema = legacy.dataset_id
+              AND info.table_name = legacy.table_id
+12:17:47.174964 [debug]: drop(query_span_guard) (span exit/export) took 39.689µs
+12:17:47.175100 [debug]: create_debug_span(...).entered() took 16.671µs
+12:17:49.280718 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 2.362518706s
+12:17:49.280917 [debug]: reader.schema() took 2.197µs
+12:17:49.284877 [debug]: batch-consume loop (for res in reader) took 3.931892ms
+12:17:49.288751 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 2.370697884s
+12:17:49.288789 [debug]: concat_batches + normalize_result_column_names took 24.238µs
+12:17:49.288802 [debug]: record_current_span_status_from_attrs took 8.81µs
+12:17:49.288811 [debug]: Query executed on node unknown:
+SELECT
+    table_catalog,
+    table_schema,
+    table_name,
+    view_definition
+FROM `meu-mvp-dbt`.`dbt_fin_ana`.INFORMATION_SCHEMA.VIEWS
+WHERE table_name IN ('fct_daily_gmv')
+12:17:49.288835 [debug]: drop(query_span_guard) (span exit/export) took 29.206µs
+12:17:49.289833 [debug]: processing request
+12:17:49.338205 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 2.163051387s
+12:17:49.338253 [debug]: reader.schema() took 1.549µs
+12:17:49.342531 [debug]: batch-consume loop (for res in reader) took 4.256568ms
+12:17:49.346225 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 2.171108288s
+12:17:49.346301 [debug]: concat_batches + normalize_result_column_names took 33.399µs
+12:17:49.346314 [debug]: record_current_span_status_from_attrs took 8.099µs
+12:17:49.346324 [debug]: Query executed on node unknown:
+SELECT
+    table_catalog,
+    table_schema,
+    table_name,
+    view_definition
+FROM `meu-mvp-dbt`.`dbt_fin_ana`.INFORMATION_SCHEMA.VIEWS
+WHERE table_name IN ('fct_daily_gmv')
+12:17:49.346352 [debug]: drop(query_span_guard) (span exit/export) took 32.997µs
+12:17:49.347419 [debug]: processing request
+12:17:49.538997 [debug]: Writing runtime sql for node "test.jaffle_shop.not_null_fct_daily_gmv_gmv.499dcbaf83"
+12:17:49.540601 [debug]: create_debug_span(...).entered() took 20.341µs
+12:17:49.591331 [debug]: Writing runtime sql for node "test.jaffle_shop.unique_fct_daily_gmv_order_date.df3dd9f029"
+12:17:49.592493 [debug]: create_debug_span(...).entered() took 23.646µs
+12:17:49.963610 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 3.039794286s
+12:17:49.963657 [debug]: reader.schema() took 1.337µs
+12:17:49.966889 [debug]: batch-consume loop (for res in reader) took 3.211537ms
+12:17:49.970312 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 3.046539216s
+12:17:49.970361 [debug]: concat_batches + normalize_result_column_names took 28.18µs
+12:17:49.970376 [debug]: record_current_span_status_from_attrs took 9.247µs
+12:17:49.970386 [debug]: Query executed on node unknown:
+SELECT
+    table_catalog,
+    table_schema,
+    table_name,
+    view_definition
+FROM `meu-mvp-dbt`.`dbt_fin_ana`.INFORMATION_SCHEMA.VIEWS
+WHERE table_name IN ('fct_daily_gmv')
+12:17:49.970417 [debug]: drop(query_span_guard) (span exit/export) took 36.913µs
+12:17:49.971400 [debug]: processing request
+12:17:50.203613 [debug]: Writing runtime sql for node "test.jaffle_shop.assert_gmv_is_positive"
+12:17:50.205410 [debug]: create_debug_span(...).entered() took 25.927µs
+12:17:50.403297 [debug]: Query executed on node test.jaffle_shop.not_null_fct_daily_gmv_gmv.499dcbaf83:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "test.jaffle_shop.not_null_fct_daily_gmv_gmv.499dcbaf83", "profile_name": "finance_project", "target_name": "dev"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select gmv
+from `meu-mvp-dbt`.`dbt_fin_ana`.`fct_daily_gmv`
+where gmv is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+12:17:50.524306 [debug]: Query executed on node test.jaffle_shop.unique_fct_daily_gmv_order_date.df3dd9f029:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "test.jaffle_shop.unique_fct_daily_gmv_order_date.df3dd9f029", "profile_name": "finance_project", "target_name": "dev"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select order_date as unique_field
+  from `meu-mvp-dbt`.`dbt_fin_ana`.`fct_daily_gmv`
+  where order_date is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+12:17:50.543705 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 3.617479707s
+12:17:50.543787 [debug]: reader.schema() took 1.179µs
+12:17:50.550259 [debug]: batch-consume loop (for res in reader) took 6.442882ms
+12:17:50.556012 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 3.629811054s
+12:17:50.556075 [debug]: concat_batches + normalize_result_column_names took 31.921µs
+12:17:50.556091 [debug]: record_current_span_status_from_attrs took 8.759µs
+12:17:50.556104 [debug]: Query executed on node unknown:
+SELECT
+    table_catalog,
+    table_schema,
+    table_name,
+    view_definition
+FROM `meu-mvp-dbt`.`dbt_fin_ana`.INFORMATION_SCHEMA.VIEWS
+WHERE table_name IN ('fct_daily_gmv')
+12:17:50.556142 [debug]: drop(query_span_guard) (span exit/export) took 44.696µs
+12:17:50.557015 [debug]: processing request
+12:17:50.923403 [debug]: Writing runtime sql for node "test.jaffle_shop.not_null_fct_daily_gmv_order_date.d99d78689d"
+12:17:50.925024 [debug]: create_debug_span(...).entered() took 54.43µs
+12:17:51.043598 [debug]: Query executed on node test.jaffle_shop.assert_gmv_is_positive:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "test.jaffle_shop.assert_gmv_is_positive", "profile_name": "finance_project", "target_name": "dev"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  select
+    order_date,
+    gmv
+from `meu-mvp-dbt`.`dbt_fin_ana`.`fct_daily_gmv`
+where gmv < 0 or gmv is null
+  
+  
+      
+    ) dbt_internal_test
+12:17:51.404117 [error]: [DbDriverFailed (dbt1308)]: Error materializing test test.jaffle_shop.not_null_fct_daily_gmv_gmv.499dcbaf83 (target/run/jaffle_shop/target/generic_tests/not_null_fct_daily_gmv_gmv.sql)
+  [BigQuery] googleapi: Error 404: Not found: Table meu-mvp-dbt:dbt_fin_ana.fct_daily_gmv was not found in location US, notFound (Query: https://console.cloud.google.com/bigquery?project=meu-mvp-dbt&j=bq:US:adbc-f7356ca2-57e6-4ebf-bcf9-c40bc1056554&page=queryresults)
+  (in run/jaffle_shop/target/generic_tests/not_null_fct_daily_gmv_gmv.sql:1:1)
+12:17:51.404303 [info ]: Finished running [  4.49s] test dbt_fin_ana_dbt_test__audit.not_null_fct_daily_gmv_gmv [error]
+12:17:51.404423 [info ]:     Failed test  not_null_fct_daily_gmv_gmv (models/marts/schema.yml:15:13) [3 of 4 in 4.50s]
+12:17:51.524967 [error]: [DbDriverFailed (dbt1308)]: Error materializing test test.jaffle_shop.unique_fct_daily_gmv_order_date.df3dd9f029 (target/run/jaffle_shop/target/generic_tests/unique_fct_daily_gmv_order_date.sql)
+  [BigQuery] googleapi: Error 404: Not found: Table meu-mvp-dbt:dbt_fin_ana.fct_daily_gmv was not found in location US, notFound (Query: https://console.cloud.google.com/bigquery?project=meu-mvp-dbt&j=bq:US:adbc-a4eca6ed-11e9-4e1f-b4c7-094e52fc4064&page=queryresults)
+  (in run/jaffle_shop/target/generic_tests/unique_fct_daily_gmv_order_date.sql:1:1)
+12:17:51.525184 [info ]: Finished running [  4.60s] test dbt_fin_ana_dbt_test__audit.unique_fct_daily_gmv_order_date [error]
+12:17:51.525306 [info ]:     Failed test  unique_fct_daily_gmv_order_date (models/marts/schema.yml:11:13) [1 of 4 in 4.62s]
+12:17:51.846648 [debug]: Query executed on node test.jaffle_shop.not_null_fct_daily_gmv_order_date.d99d78689d:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "test.jaffle_shop.not_null_fct_daily_gmv_order_date.d99d78689d", "profile_name": "finance_project", "target_name": "dev"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select order_date
+from `meu-mvp-dbt`.`dbt_fin_ana`.`fct_daily_gmv`
+where order_date is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+12:17:52.044756 [error]: [DbDriverFailed (dbt1308)]: Error materializing test test.jaffle_shop.assert_gmv_is_positive (target/run/jaffle_shop/tests/assert_gmv_is_positive.sql)
+  [BigQuery] googleapi: Error 404: Not found: Table meu-mvp-dbt:dbt_fin_ana.fct_daily_gmv was not found in location US, notFound (Query: https://console.cloud.google.com/bigquery?project=meu-mvp-dbt&j=bq:US:adbc-01eb8063-74ec-4426-85f9-c404778e8177&page=queryresults)
+  (in run/jaffle_shop/tests/assert_gmv_is_positive.sql:1:1)
+12:17:52.044969 [info ]: Finished running [  5.13s] test dbt_fin_ana_dbt_test__audit.assert_gmv_is_positive [error]
+12:17:52.045130 [info ]:     Failed test  assert_gmv_is_positive (tests/assert_gmv_is_positive.sql) [4 of 4 in 5.14s]
+12:17:52.447441 [debug]: processing request
+12:17:52.847950 [error]: [DbDriverFailed (dbt1308)]: Error materializing test test.jaffle_shop.not_null_fct_daily_gmv_order_date.d99d78689d (target/run/jaffle_shop/target/generic_tests/not_null_fct_daily_gmv_order_date.sql)
+  [BigQuery] googleapi: Error 404: Not found: Table meu-mvp-dbt:dbt_fin_ana.fct_daily_gmv was not found in location US, notFound (Query: https://console.cloud.google.com/bigquery?project=meu-mvp-dbt&j=bq:US:adbc-1b52f6b8-44e8-47db-9975-7a2e22e81813&page=queryresults)
+  (in run/jaffle_shop/target/generic_tests/not_null_fct_daily_gmv_order_date.sql:1:1)
+12:17:52.848134 [info ]: Finished running [  5.93s] test dbt_fin_ana_dbt_test__audit.not_null_fct_daily_gmv_order_date [error]
+12:17:52.848217 [info ]: Finished running [  5.93s] (4 nodes, 0 skipped, 4 errors)
+12:17:52.848278 [info ]:     Failed test  not_null_fct_daily_gmv_order_date (models/marts/schema.yml:10:13) [2 of 4 in 5.94s]
+12:17:52.848654 [debug]: processing request
+12:18:02.662391 [info ]: 
+==================== Execution Summary =====================
+Finished 'test' with 4 errors for target 'dev' [26.2s]
+Processed: 4 tests
+Summary: 4 total | 4 error
+==================== 2026-11-13T12:34:58.182571Z | 01a1d4e7-6a05-7352-927f-202f593602a1 ====================
+12:35:04.280220 [info ]: 
+==================== Execution Summary =====================
+Finished 'internal' successfully [6.1s]
+==================== 2026-11-13T12:35:38.172295Z | 01a1d4e8-063a-73a2-8092-e02cc1e46750 ====================
+12:35:38.172660 [info ]: dbt 2.0.11
+12:35:38.173086 [info ]: Started loading project
+12:35:38.174214 [info ]: Loading ~/.dbt/profiles.yml
+12:35:38.179954 [info ]: Loading packages.yml
+12:35:38.180737 [debug]:    Started loading packages
+12:35:38.182530 [debug]:     Loaded [  0.00s] packages
+12:35:38.183435 [info ]: Finished loading project [  0.01s]
+12:35:38.184276 [info ]: Started parsing (6 nodes)
+12:35:38.250023 [debug]:    Started building model nodes
+12:35:38.250076 [debug]:   Finished [  0.00s] building model nodes
+12:35:38.251124 [debug]:    Started resolving data tests
+12:35:38.251170 [debug]:   Finished [  0.00s] resolving data tests
+12:35:38.251592 [debug]:    Started building model nodes
+12:35:38.251610 [debug]:   Finished [  0.00s] building model nodes
+12:35:38.252009 [debug]:    Started resolving data tests
+12:35:38.252027 [debug]:   Finished [  0.00s] resolving data tests
+12:35:38.256556 [debug]:    Started building model nodes
+12:35:38.256591 [debug]:   Finished [  0.00s] building model nodes
+12:35:38.257246 [debug]:    Started resolving data tests
+12:35:38.257275 [debug]:   Finished [  0.00s] resolving data tests
+12:35:38.258126 [debug]: Finished parsing models/marts/schema.yml [  0.00s]
+12:35:38.261822 [debug]: Finished parsing models/intermediate/int_order_items_enriched.sql [  0.00s]
+12:35:38.262559 [debug]: Finished parsing models/marts/fct_daily_gmv.sql [  0.00s]
+12:35:38.262893 [debug]: Finished parsing models/staging/stg_order_items.sql [  0.00s]
+12:35:38.263140 [debug]: Finished parsing models/staging/stg_orders.sql [  0.00s]
+12:35:38.263182 [debug]:    Started building model nodes
+12:35:38.266951 [debug]:   Finished [  0.00s] building model nodes
+12:35:38.268540 [debug]:    Started resolving data tests
+12:35:38.268967 [debug]: Finished parsing tests/assert_gmv_is_positive.sql [  0.00s]
+12:35:38.269939 [debug]: Finished parsing target/generic_tests/not_null_fct_daily_gmv_gmv.sql [  0.00s]
+12:35:38.270748 [debug]: Finished parsing target/generic_tests/not_null_fct_daily_gmv_order_date.sql [  0.00s]
+12:35:38.271249 [debug]: Finished parsing target/generic_tests/unique_fct_daily_gmv_order_date.sql [  0.00s]
+12:35:38.272648 [debug]:   Finished [  0.00s] resolving data tests
+12:35:38.273541 [debug]:    Started typechecking macros
+12:35:38.430896 [debug]:   Finished [  0.16s] typechecking macros
+12:35:38.432163 [info ]: Finished parsing [  0.25s] (6 nodes, 0 skipped, 0 errors)
+12:35:45.095286 [debug]: processing request
+12:35:45.314504 [info ]: dbt State is enabled (endpoint https://api.state.dbt.com:443, defer_to prod)
+12:35:45.316678 [info ]: Started scheduling
+12:35:45.316936 [info ]: Finished scheduling [  0.00s]
+12:35:45.361470 [info ]: Started building task graph
+12:35:45.361787 [info ]: Finished building task graph [  0.00s]
+12:35:45.374222 [debug]: BigQuery driver resolved: bigquery 0.21.0.dev+dbt0.21.23
+12:35:46.763933 [debug]: borrow_tlocal_connection() took 1.383795ms
+12:35:46.763981 [debug]: processing request
+12:35:46.766151 [debug]: create_debug_span(...).entered() took 43.7µs
+12:35:46.766152 [debug]: create_debug_span(...).entered() took 24.31µs
+12:35:49.928554 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 3.162197229s
+12:35:49.928656 [debug]: reader.schema() took 1.024µs
+12:35:50.543361 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 3.776264528s
+12:35:50.543941 [debug]: reader.schema() took 1.481µs
+12:35:50.793713 [debug]: batch-consume loop (for res in reader) took 865.0172ms
+12:35:50.795507 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 4.029207121s
+12:35:50.795568 [debug]: concat_batches + normalize_result_column_names took 48.516µs
+12:35:50.795583 [debug]: record_current_span_status_from_attrs took 10.251µs
+12:35:50.795592 [debug]: Query executed on node unknown:
+SELECT
+                 legacy.dataset_id AS table_schema,
+                 legacy.table_id AS table_name,
+                 IF(info.table_type = 'EXTERNAL', NULL, TIMESTAMP_MILLIS(legacy.last_modified_time)) AS last_altered,
+                 (legacy.type = 2) AS is_view
+             FROM `meu-mvp-dbt`.`dbt_fin_ana_raw`.__TABLES__ legacy
+             LEFT JOIN `meu-mvp-dbt`.`dbt_fin_ana_raw`.INFORMATION_SCHEMA.TABLES info
+               ON info.table_schema = legacy.dataset_id
+              AND info.table_name = legacy.table_id
+12:35:50.795620 [debug]: drop(query_span_guard) (span exit/export) took 33.763µs
+12:35:51.617739 [debug]: batch-consume loop (for res in reader) took 1.073757204s
+12:35:51.620260 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 4.853381399s
+12:35:51.620302 [debug]: concat_batches + normalize_result_column_names took 10.026µs
+12:35:51.620320 [debug]: record_current_span_status_from_attrs took 11.009µs
+12:35:51.620332 [debug]: Query executed on node unknown:
+SELECT UNIX_MILLIS(CURRENT_TIMESTAMP())
+12:35:51.620359 [debug]: drop(query_span_guard) (span exit/export) took 34.084µs
+12:35:51.620413 [debug]: adapter.execute() (full call, incl. adbc_execute_with_options) took 4.856434883s
+12:35:51.620657 [info ]: Started rendering (2 nodes)
+12:35:51.620772 [info ]: Started seed dbt_fin_ana_raw.raw_orders
+12:35:51.620792 [debug]: Started rendering seed dbt_fin_ana_raw.raw_orders
+12:35:51.620843 [info ]: Started seed dbt_fin_ana_raw.raw_order_items
+12:35:51.620851 [debug]: Started rendering seed dbt_fin_ana_raw.raw_order_items
+12:35:51.620986 [debug]: Finished rendering [  0.00s] seed dbt_fin_ana_raw.raw_order_items [success]
+12:35:51.621115 [info ]: Started running (2 nodes)
+12:35:51.621164 [info ]: Started running seed dbt_fin_ana_raw.raw_order_items
+12:35:51.621188 [debug]: Finished rendering [  0.00s] seed dbt_fin_ana_raw.raw_orders [success]
+12:35:51.621219 [info ]: Finished rendering [  0.00s] (2 nodes, 0 skipped, 0 errors)
+12:35:51.621245 [info ]: Started running seed dbt_fin_ana_raw.raw_orders
+12:35:52.904429 [debug]: Applying DROP to: `meu-mvp-dbt`.`dbt_fin_ana_raw`.`raw_order_items`
+12:35:52.907247 [debug]: create_debug_span(...).entered() took 19.06µs
+12:35:52.908652 [debug]: Applying DROP to: `meu-mvp-dbt`.`dbt_fin_ana_raw`.`raw_orders`
+12:35:52.910044 [debug]: create_debug_span(...).entered() took 14.431µs
+12:35:55.018916 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 2.10876784s
+12:35:55.018986 [debug]: reader.schema() took 1.657µs
+12:35:55.029610 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 2.119536762s
+12:35:55.029751 [debug]: concat_batches + normalize_result_column_names took 4.1µs
+12:35:55.029767 [debug]: record_current_span_status_from_attrs took 10.607µs
+12:35:55.029780 [debug]: Query executed on node seed.jaffle_shop.raw_orders:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "seed.jaffle_shop.raw_orders", "profile_name": "finance_project", "target_name": "dev"} */
+
+    drop table if exists `meu-mvp-dbt`.`dbt_fin_ana_raw`.`raw_orders`
+
+12:35:55.029908 [debug]: drop(query_span_guard) (span exit/export) took 135.898µs
+12:35:55.031560 [debug]: create_debug_span(...).entered() took 14.974µs
+12:35:55.064638 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 2.15671846s
+12:35:55.064705 [debug]: reader.schema() took 1.485µs
+12:35:55.071530 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 2.163689601s
+12:35:55.071567 [debug]: concat_batches + normalize_result_column_names took 3.964µs
+12:35:55.071583 [debug]: record_current_span_status_from_attrs took 10.066µs
+12:35:55.071649 [debug]: Query executed on node seed.jaffle_shop.raw_order_items:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "seed.jaffle_shop.raw_order_items", "profile_name": "finance_project", "target_name": "dev"} */
+
+    drop table if exists `meu-mvp-dbt`.`dbt_fin_ana_raw`.`raw_order_items`
+
+12:35:55.071766 [debug]: drop(query_span_guard) (span exit/export) took 169.828µs
+12:35:55.073921 [debug]: create_debug_span(...).entered() took 20.13µs
+12:35:58.956058 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 3.881884204s
+12:35:58.956117 [debug]: reader.schema() took 1.482µs
+12:35:58.961916 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 3.887968585s
+12:35:58.961936 [debug]: concat_batches + normalize_result_column_names took 3.263µs
+12:35:58.961949 [debug]: record_current_span_status_from_attrs took 8.86µs
+12:35:58.961962 [debug]: Query executed on node seed.jaffle_shop.raw_order_items:
+
+12:35:58.962058 [debug]: drop(query_span_guard) (span exit/export) took 104.061µs
+12:35:58.964423 [debug]: create_debug_span(...).entered() took 15.217µs
+12:35:59.985293 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 4.953582393s
+12:35:59.985359 [debug]: reader.schema() took 1.548µs
+12:35:59.993028 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 4.961445818s
+12:35:59.993072 [debug]: concat_batches + normalize_result_column_names took 3.529µs
+12:35:59.993143 [debug]: record_current_span_status_from_attrs took 54.23µs
+12:35:59.993168 [debug]: Query executed on node seed.jaffle_shop.raw_orders:
+
+12:35:59.993325 [debug]: drop(query_span_guard) (span exit/export) took 164.87µs
+12:35:59.995313 [debug]: create_debug_span(...).entered() took 14.423µs
+12:36:02.330628 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 3.365960211s
+12:36:02.330676 [debug]: reader.schema() took 1.019µs
+12:36:02.733147 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 2.737724887s
+12:36:02.733204 [debug]: reader.schema() took 1.694µs
+12:36:03.005171 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 4.040548891s
+12:36:03.005257 [debug]: concat_batches + normalize_result_column_names took 40.215µs
+12:36:03.005272 [debug]: record_current_span_status_from_attrs took 9.808µs
+12:36:03.005283 [debug]: Query executed on node seed.jaffle_shop.raw_order_items:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "seed.jaffle_shop.raw_order_items", "profile_name": "finance_project", "target_name": "dev"} */
+
+    alter table `meu-mvp-dbt`.`dbt_fin_ana_raw`.`raw_order_items` set OPTIONS()
+  
+12:36:03.005312 [debug]: drop(query_span_guard) (span exit/export) took 36.255µs
+12:36:03.007247 [debug]: Writing runtime SQL for node "seed.jaffle_shop.raw_order_items"
+12:36:03.009505 [debug]: processing request
+12:36:03.234368 [info ]: Finished running [ 11.61s] seed dbt_fin_ana_raw.raw_order_items [success]
+12:36:03.234526 [info ]:  Succeeded seed  dbt_fin_ana_raw.raw_order_items (table) [2 of 2 in 11.61s]
+12:36:03.306152 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 3.310791544s
+12:36:03.306236 [debug]: concat_batches + normalize_result_column_names took 37.127µs
+12:36:03.306251 [debug]: record_current_span_status_from_attrs took 10.051µs
+12:36:03.306264 [debug]: Query executed on node seed.jaffle_shop.raw_orders:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "seed.jaffle_shop.raw_orders", "profile_name": "finance_project", "target_name": "dev"} */
+
+    alter table `meu-mvp-dbt`.`dbt_fin_ana_raw`.`raw_orders` set OPTIONS()
+  
+12:36:03.306299 [debug]: drop(query_span_guard) (span exit/export) took 42.94µs
+12:36:03.308461 [debug]: Writing runtime SQL for node "seed.jaffle_shop.raw_orders"
+12:36:03.310914 [debug]: processing request
+12:36:03.536953 [info ]: Finished running [ 11.92s] seed dbt_fin_ana_raw.raw_orders [success]
+12:36:03.537130 [info ]: Finished running [ 11.92s] (2 nodes, 0 skipped, 0 errors)
+12:36:03.537167 [info ]:  Succeeded seed  dbt_fin_ana_raw.raw_orders (table) [1 of 2 in 11.91s]
+12:36:03.537681 [debug]: processing request
+12:36:14.524545 [info ]: 
+==================== Execution Summary =====================
+Finished 'seed' successfully for target 'dev' [36.4s]
+Processed: 2 seeds
+Summary: 2 total | 2 success
+==================== 2026-11-13T12:36:58.042520Z | 01a1d4e9-3e38-7bb3-82a8-8dccfe640685 ====================
+12:36:58.042638 [info ]: dbt 2.0.11
+12:36:58.042805 [info ]: Started loading project
+12:36:58.044291 [info ]: Loading ~/.dbt/profiles.yml
+12:36:58.048746 [info ]: Loading packages.yml
+12:36:58.049401 [debug]:    Started loading packages
+12:36:58.051078 [debug]:     Loaded [  0.00s] packages
+12:36:58.052117 [info ]: Finished loading project [  0.01s]
+12:36:58.052705 [info ]: Started parsing (6 nodes)
+12:36:58.099277 [debug]:    Started building model nodes
+12:36:58.099330 [debug]:   Finished [  0.00s] building model nodes
+12:36:58.099730 [debug]:    Started resolving data tests
+12:36:58.100364 [debug]:    Started building model nodes
+12:36:58.100383 [debug]:   Finished [  0.00s] building model nodes
+12:36:58.100707 [debug]:    Started resolving data tests
+12:36:58.100722 [debug]:   Finished [  0.00s] resolving data tests
+12:36:58.099762 [debug]:   Finished [  0.00s] resolving data tests
+12:36:58.104083 [debug]:    Started building model nodes
+12:36:58.104096 [debug]:   Finished [  0.00s] building model nodes
+12:36:58.104405 [debug]:    Started resolving data tests
+12:36:58.104422 [debug]:   Finished [  0.00s] resolving data tests
+12:36:58.104692 [debug]: Finished parsing models/marts/schema.yml [  0.00s]
+12:36:58.112576 [debug]: Finished parsing models/intermediate/int_order_items_enriched.sql [  0.00s]
+12:36:58.113223 [debug]: Finished parsing models/marts/fct_daily_gmv.sql [  0.00s]
+12:36:58.113486 [debug]: Finished parsing models/staging/stg_order_items.sql [  0.00s]
+12:36:58.113687 [debug]: Finished parsing models/staging/stg_orders.sql [  0.00s]
+12:36:58.113737 [debug]:    Started building model nodes
+12:36:58.120523 [debug]:   Finished [  0.01s] building model nodes
+12:36:58.121818 [debug]:    Started resolving data tests
+12:36:58.122277 [debug]: Finished parsing tests/assert_gmv_is_positive.sql [  0.00s]
+12:36:58.122714 [debug]: Finished parsing target/generic_tests/not_null_fct_daily_gmv_gmv.sql [  0.00s]
+12:36:58.123021 [debug]: Finished parsing target/generic_tests/not_null_fct_daily_gmv_order_date.sql [  0.00s]
+12:36:58.123278 [debug]: Finished parsing target/generic_tests/unique_fct_daily_gmv_order_date.sql [  0.00s]
+12:36:58.124408 [debug]:   Finished [  0.00s] resolving data tests
+12:36:58.125043 [debug]:    Started typechecking macros
+12:36:58.281360 [debug]:   Finished [  0.16s] typechecking macros
+12:36:58.282619 [info ]: Finished parsing [  0.23s] (6 nodes, 0 skipped, 0 errors)
+12:37:03.995184 [debug]: processing request
+12:37:04.173042 [info ]: dbt State is enabled (endpoint https://api.state.dbt.com:443, defer_to prod)
+12:37:04.174507 [info ]: Started scheduling
+12:37:04.175000 [info ]: Finished scheduling [  0.00s]
+12:37:04.181508 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "meu-mvp-dbt", schema: "dbt_fin_ana_raw", table: "raw_order_items" }) and interval: None
+12:37:04.182135 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "meu-mvp-dbt", schema: "dbt_fin_ana_raw", table: "raw_orders" }) and interval: None
+12:37:04.185928 [info ]:    Started downloading referenced relations (1 items)
+12:37:04.186675 [debug]: BigQuery driver resolved: bigquery 0.21.0.dev+dbt0.21.23
+12:37:04.228163 [debug]:    Started downloading `meu-mvp-dbt`.`dbt_fin_ana`
+12:37:06.427250 [debug]: Downloaded [  2.20s] `meu-mvp-dbt`.`dbt_fin_ana`
+12:37:06.428123 [info ]:   Finished [  2.24s] downloading referenced relations (1 items)
+12:37:06.469449 [info ]: Started building task graph
+12:37:06.469688 [info ]: Finished building task graph [  0.00s]
+12:37:06.840675 [debug]: borrow_tlocal_connection() took 22.952µs
+12:37:06.842852 [debug]: processing request
+12:37:06.845795 [debug]: create_debug_span(...).entered() took 25.987µs
+12:37:06.846065 [debug]: create_debug_span(...).entered() took 37.984µs
+12:37:06.848305 [debug]: create_debug_span(...).entered() took 35.291µs
+12:37:09.956662 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 3.109114583s
+12:37:09.956811 [debug]: reader.schema() took 1.856µs
+12:37:10.493023 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 3.646861141s
+12:37:10.493097 [debug]: reader.schema() took 1.81µs
+12:37:10.859581 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 4.011203563s
+12:37:10.859648 [debug]: reader.schema() took 1.747µs
+12:37:10.892920 [debug]: batch-consume loop (for res in reader) took 936.072047ms
+12:37:10.898740 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 4.052904358s
+12:37:10.898921 [debug]: concat_batches + normalize_result_column_names took 14.284µs
+12:37:10.898950 [debug]: record_current_span_status_from_attrs took 12.708µs
+12:37:10.898968 [debug]: Query executed on node unknown:
+SELECT UNIX_MILLIS(CURRENT_TIMESTAMP())
+12:37:10.899013 [debug]: drop(query_span_guard) (span exit/export) took 54.184µs
+12:37:10.899544 [debug]: adapter.execute() (full call, incl. adbc_execute_with_options) took 4.058745575s
+12:37:10.900082 [info ]: Started rendering (4 nodes)
+12:37:10.900242 [info ]: Started model dbt_fin_ana.stg_orders
+12:37:10.900268 [debug]: Started rendering model dbt_fin_ana.stg_orders
+12:37:10.900447 [info ]: Started model dbt_fin_ana.stg_order_items
+12:37:10.900526 [debug]: Started rendering model dbt_fin_ana.stg_order_items
+12:37:10.902374 [debug]: Compiled SQL for node model.jaffle_shop.stg_orders at target/compiled/jaffle_shop/models/staging/stg_orders.sql
+12:37:10.903244 [debug]: Compiled SQL for node model.jaffle_shop.stg_order_items at target/compiled/jaffle_shop/models/staging/stg_order_items.sql
+12:37:10.903417 [debug]: Finished rendering [  0.00s] model dbt_fin_ana.stg_orders [success]
+12:37:10.903571 [info ]: Started analyzing (4 nodes)
+12:37:10.903699 [debug]: Started analyzing model dbt_fin_ana.stg_orders
+12:37:10.903749 [debug]: Finished rendering [  0.00s] model dbt_fin_ana.stg_order_items [success]
+12:37:10.903869 [debug]: Started analyzing model dbt_fin_ana.stg_order_items
+12:37:10.932815 [debug]: Finished analyzing [  0.03s] model dbt_fin_ana.stg_order_items [success]
+12:37:10.932966 [info ]: Started running (4 nodes)
+12:37:10.933010 [info ]: Started running model dbt_fin_ana.stg_order_items
+12:37:10.933048 [debug]: Finished analyzing [  0.03s] model dbt_fin_ana.stg_orders [success]
+12:37:10.933098 [info ]: Started running model dbt_fin_ana.stg_orders
+12:37:10.933116 [info ]: Started model dbt_fin_ana.int_order_items_enriched
+12:37:10.933127 [debug]: Started rendering model dbt_fin_ana.int_order_items_enriched
+12:37:10.933509 [debug]: processing request
+12:37:10.933595 [debug]: processing request
+12:37:10.938340 [debug]: Compiled SQL for node model.jaffle_shop.int_order_items_enriched at target/compiled/jaffle_shop/models/intermediate/int_order_items_enriched.sql
+12:37:10.938733 [debug]: Finished rendering [  0.01s] model dbt_fin_ana.int_order_items_enriched [success]
+12:37:10.939380 [debug]: Started analyzing model dbt_fin_ana.int_order_items_enriched
+12:37:10.951168 [debug]: Finished analyzing [  0.01s] model dbt_fin_ana.int_order_items_enriched [success]
+12:37:10.951840 [info ]: Started model dbt_fin_ana.fct_daily_gmv
+12:37:10.951896 [debug]: Started rendering model dbt_fin_ana.fct_daily_gmv
+12:37:10.953695 [debug]: Compiled SQL for node model.jaffle_shop.fct_daily_gmv at target/compiled/jaffle_shop/models/marts/fct_daily_gmv.sql
+12:37:10.953859 [debug]: Finished rendering [  0.00s] model dbt_fin_ana.fct_daily_gmv [success]
+12:37:10.953952 [info ]: Finished rendering [  0.05s] (4 nodes, 0 skipped, 0 errors)
+12:37:10.954011 [debug]: Started analyzing model dbt_fin_ana.fct_daily_gmv
+12:37:10.965093 [debug]: Finished analyzing [  0.01s] model dbt_fin_ana.fct_daily_gmv [success]
+12:37:10.965214 [info ]: Finished analyzing [  0.06s] (4 nodes, 0 skipped, 0 errors)
+12:37:11.404935 [debug]: batch-consume loop (for res in reader) took 911.798363ms
+12:37:11.407795 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 4.56169904s
+12:37:11.407859 [debug]: concat_batches + normalize_result_column_names took 47.102µs
+12:37:11.407872 [debug]: record_current_span_status_from_attrs took 10.001µs
+12:37:11.407882 [debug]: Query executed on node unknown:
+SELECT
+                 legacy.dataset_id AS table_schema,
+                 legacy.table_id AS table_name,
+                 IF(info.table_type = 'EXTERNAL', NULL, TIMESTAMP_MILLIS(legacy.last_modified_time)) AS last_altered,
+                 (legacy.type = 2) AS is_view
+             FROM `meu-mvp-dbt`.`dbt_fin_ana`.__TABLES__ legacy
+             LEFT JOIN `meu-mvp-dbt`.`dbt_fin_ana`.INFORMATION_SCHEMA.TABLES info
+               ON info.table_schema = legacy.dataset_id
+              AND info.table_name = legacy.table_id
+12:37:11.407911 [debug]: drop(query_span_guard) (span exit/export) took 35.242µs
+12:37:11.730879 [debug]: batch-consume loop (for res in reader) took 871.187331ms
+12:37:11.735843 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 4.887496187s
+12:37:11.735915 [debug]: concat_batches + normalize_result_column_names took 29.401µs
+12:37:11.735932 [debug]: record_current_span_status_from_attrs took 11.941µs
+12:37:11.735949 [debug]: Query executed on node unknown:
+SELECT
+                 legacy.dataset_id AS table_schema,
+                 legacy.table_id AS table_name,
+                 IF(info.table_type = 'EXTERNAL', NULL, TIMESTAMP_MILLIS(legacy.last_modified_time)) AS last_altered,
+                 (legacy.type = 2) AS is_view
+             FROM `meu-mvp-dbt`.`dbt_fin_ana_raw`.__TABLES__ legacy
+             LEFT JOIN `meu-mvp-dbt`.`dbt_fin_ana_raw`.INFORMATION_SCHEMA.TABLES info
+               ON info.table_schema = legacy.dataset_id
+              AND info.table_name = legacy.table_id
+12:37:11.736118 [debug]: drop(query_span_guard) (span exit/export) took 181.332µs
+12:37:11.736929 [debug]: processing request
+12:37:11.736971 [debug]: processing request
+12:37:11.842655 [debug]: processing request
+12:37:11.982708 [info ]: Finished running [  1.05s] model dbt_fin_ana.stg_orders [reused]
+12:37:11.982907 [info ]:     Reused model dbt_fin_ana.stg_orders (view - No new changes on any upstreams) [1 of 4]
+12:37:11.997627 [info ]: Finished running [  1.06s] model dbt_fin_ana.stg_order_items [reused]
+12:37:11.997851 [info ]:     Reused model dbt_fin_ana.stg_order_items (view - No new changes on any upstreams) [2 of 4]
+12:37:11.997958 [info ]: Started running model dbt_fin_ana.int_order_items_enriched
+12:37:11.998250 [debug]: processing request
+12:37:12.269779 [info ]: Finished running [  0.27s] model dbt_fin_ana.int_order_items_enriched [reused]
+12:37:12.270178 [info ]:     Reused model dbt_fin_ana.int_order_items_enriched (view - No new changes on any upstreams) [3 of 4]
+12:37:12.270303 [info ]: Started running model dbt_fin_ana.fct_daily_gmv
+12:37:12.273661 [debug]: create_debug_span(...).entered() took 30.28µs
+12:37:16.500064 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 4.226321293s
+12:37:16.500142 [debug]: reader.schema() took 2.413µs
+12:37:16.505128 [debug]: batch-consume loop (for res in reader) took 4.965229ms
+12:37:16.509549 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 4.23585334s
+12:37:16.509614 [debug]: concat_batches + normalize_result_column_names took 37.119µs
+12:37:16.509633 [debug]: record_current_span_status_from_attrs took 11.121µs
+12:37:16.509649 [debug]: Query executed on node unknown:
+SELECT
+    table_catalog,
+    table_schema,
+    table_name,
+    view_definition
+FROM `meu-mvp-dbt`.`dbt_fin_ana_raw`.INFORMATION_SCHEMA.VIEWS
+WHERE table_name IN ('raw_order_items', 'raw_orders')
+12:37:16.509820 [debug]: drop(query_span_guard) (span exit/export) took 178.243µs
+12:37:16.510724 [debug]: processing request
+12:37:16.800221 [debug]: Invalid value for on_schema_change (None) specified. Setting default value of ignore.
+12:37:16.805337 [debug]: Writing runtime sql for node "model.jaffle_shop.fct_daily_gmv"
+12:37:16.807276 [debug]: create_debug_span(...).entered() took 28.105µs
+12:37:16.842800 [debug]: processing request
+12:37:18.410065 [debug]: Query executed on node model.jaffle_shop.fct_daily_gmv:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.jaffle_shop.fct_daily_gmv", "profile_name": "finance_project", "target_name": "dev"} */
+
+
+    create table `meu-mvp-dbt`.`dbt_fin_ana`.`fct_daily_gmv`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      
+
+with order_details as (
+    select * from `meu-mvp-dbt`.`dbt_fin_ana`.`int_order_items_enriched`
+    where status = 'completed'
+),
+daily_metrics as (
+    select
+        order_date,
+        sum(line_total) as gmv,
+        count(distinct order_id) as total_orders,
+        sum(line_total) / nullif(count(distinct order_id), 0) as aov
+    from order_details
+    group by 1
+)
+
+select * from daily_metrics
+
+
+    );
+12:37:19.411392 [error]: [DbDriverFailed (dbt1308)]: Database Error in model fct_daily_gmv (target/run/jaffle_shop/models/marts/fct_daily_gmv.sql)
+  [BigQuery] googleapi: Error 400: Invalid date: '2024/01/01', invalidQuery (Query: https://console.cloud.google.com/bigquery?project=meu-mvp-dbt&j=bq:US:adbc-4a14794a-584e-4fd6-9499-cb109c9bd89c&page=queryresults)
+  (in run/jaffle_shop/models/marts/fct_daily_gmv.sql)
+12:37:19.411628 [info ]: Finished running [  7.14s] model dbt_fin_ana.fct_daily_gmv [error]
+12:37:19.411791 [info ]: Finished running [  8.48s] (4 nodes, 3 skipped, 1 errors)
+12:37:19.411833 [info ]:     Failed model dbt_fin_ana.fct_daily_gmv (incremental) [4 of 4 in 7.15s]
+12:37:19.412347 [debug]: processing request
+12:37:26.286932 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' with 1 error for target 'dev' [28.2s]
+Processed: 4 models
+Summary: 4 total | 3 reused | 1 error
+==================== 2026-11-13T12:37:47.320650Z | 01a1d4e9-feb6-7bd2-96cf-cf53acb1f064 ====================
+12:37:47.320801 [info ]: dbt 2.0.11
+12:37:47.321108 [info ]: Started loading project
+12:37:47.321844 [info ]: Loading ~/.dbt/profiles.yml
+12:37:47.327326 [info ]: Loading packages.yml
+12:37:47.328081 [debug]:    Started loading packages
+12:37:47.329553 [debug]:     Loaded [  0.00s] packages
+12:37:47.330524 [info ]: Finished loading project [  0.01s]
+12:37:47.330926 [info ]: Started parsing (6 nodes)
+12:37:47.375732 [debug]:    Started building model nodes
+12:37:47.375790 [debug]:   Finished [  0.00s] building model nodes
+12:37:47.376179 [debug]:    Started resolving data tests
+12:37:47.376208 [debug]:   Finished [  0.00s] resolving data tests
+12:37:47.376461 [debug]:    Started building model nodes
+12:37:47.376467 [debug]:   Finished [  0.00s] building model nodes
+12:37:47.376794 [debug]:    Started resolving data tests
+12:37:47.376811 [debug]:   Finished [  0.00s] resolving data tests
+12:37:47.377037 [debug]:    Started building model nodes
+12:37:47.377077 [debug]:   Finished [  0.00s] building model nodes
+12:37:47.378090 [debug]:    Started resolving data tests
+12:37:47.378150 [debug]:   Finished [  0.00s] resolving data tests
+12:37:47.378480 [debug]: Finished parsing models/marts/schema.yml [  0.00s]
+12:37:47.380480 [debug]: Finished parsing models/intermediate/int_order_items_enriched.sql [  0.00s]
+12:37:47.381085 [debug]: Finished parsing models/marts/fct_daily_gmv.sql [  0.00s]
+12:37:47.381356 [debug]: Finished parsing models/staging/stg_order_items.sql [  0.00s]
+12:37:47.381586 [debug]: Finished parsing models/staging/stg_orders.sql [  0.00s]
+12:37:47.381656 [debug]:    Started building model nodes
+12:37:47.384601 [debug]:   Finished [  0.00s] building model nodes
+12:37:47.385588 [debug]:    Started resolving data tests
+12:37:47.385919 [debug]: Finished parsing tests/assert_gmv_is_positive.sql [  0.00s]
+12:37:47.386309 [debug]: Finished parsing target/generic_tests/not_null_fct_daily_gmv_gmv.sql [  0.00s]
+12:37:47.386590 [debug]: Finished parsing target/generic_tests/not_null_fct_daily_gmv_order_date.sql [  0.00s]
+12:37:47.386846 [debug]: Finished parsing target/generic_tests/unique_fct_daily_gmv_order_date.sql [  0.00s]
+12:37:47.388137 [debug]:   Finished [  0.00s] resolving data tests
+12:37:47.389023 [debug]:    Started typechecking macros
+12:37:47.595081 [debug]:   Finished [  0.21s] typechecking macros
+12:37:47.600645 [info ]: Finished parsing [  0.27s] (6 nodes, 0 skipped, 0 errors)
+12:37:53.266550 [debug]: processing request
+12:37:53.527057 [info ]: dbt State is enabled (endpoint https://api.state.dbt.com:443, defer_to prod)
+12:37:53.529072 [info ]: Started scheduling
+12:37:53.529280 [info ]: Finished scheduling [  0.00s]
+12:37:53.580740 [info ]: Started building task graph
+12:37:53.580946 [info ]: Finished building task graph [  0.00s]
+12:37:53.594299 [debug]: BigQuery driver resolved: bigquery 0.21.0.dev+dbt0.21.23
+12:37:54.765646 [debug]: borrow_tlocal_connection() took 1.486049ms
+12:37:54.766546 [debug]: processing request
+12:37:54.767571 [debug]: create_debug_span(...).entered() took 40.834µs
+12:37:54.768526 [debug]: create_debug_span(...).entered() took 29.467µs
+12:37:58.297463 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 3.528865763s
+12:37:58.297518 [debug]: reader.schema() took 921ns
+12:37:58.853342 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 4.085672977s
+12:37:58.853398 [debug]: reader.schema() took 1.582µs
+12:37:59.139165 [debug]: batch-consume loop (for res in reader) took 841.594408ms
+12:37:59.143651 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 4.375080066s
+12:37:59.143756 [debug]: concat_batches + normalize_result_column_names took 66.796µs
+12:37:59.143811 [debug]: record_current_span_status_from_attrs took 12.52µs
+12:37:59.143830 [debug]: Query executed on node unknown:
+SELECT
+                 legacy.dataset_id AS table_schema,
+                 legacy.table_id AS table_name,
+                 IF(info.table_type = 'EXTERNAL', NULL, TIMESTAMP_MILLIS(legacy.last_modified_time)) AS last_altered,
+                 (legacy.type = 2) AS is_view
+             FROM `meu-mvp-dbt`.`dbt_fin_ana_raw`.__TABLES__ legacy
+             LEFT JOIN `meu-mvp-dbt`.`dbt_fin_ana_raw`.INFORMATION_SCHEMA.TABLES info
+               ON info.table_schema = legacy.dataset_id
+              AND info.table_name = legacy.table_id
+12:37:59.144727 [debug]: drop(query_span_guard) (span exit/export) took 901.856µs
+12:37:59.910208 [debug]: batch-consume loop (for res in reader) took 1.056766622s
+12:37:59.913718 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 5.146112368s
+12:37:59.913748 [debug]: concat_batches + normalize_result_column_names took 11.758µs
+12:37:59.913763 [debug]: record_current_span_status_from_attrs took 11.1µs
+12:37:59.913788 [debug]: Query executed on node unknown:
+SELECT UNIX_MILLIS(CURRENT_TIMESTAMP())
+12:37:59.913883 [debug]: drop(query_span_guard) (span exit/export) took 102.271µs
+12:37:59.913969 [debug]: adapter.execute() (full call, incl. adbc_execute_with_options) took 5.147998064s
+12:37:59.914237 [info ]: Started rendering (2 nodes)
+12:37:59.914337 [info ]: Started seed dbt_fin_ana_raw.raw_orders
+12:37:59.914355 [debug]: Started rendering seed dbt_fin_ana_raw.raw_orders
+12:37:59.914489 [info ]: Started seed dbt_fin_ana_raw.raw_order_items
+12:37:59.914507 [debug]: Started rendering seed dbt_fin_ana_raw.raw_order_items
+12:37:59.914591 [debug]: Finished rendering [  0.00s] seed dbt_fin_ana_raw.raw_orders [success]
+12:37:59.914689 [info ]: Started running (2 nodes)
+12:37:59.914719 [info ]: Started running seed dbt_fin_ana_raw.raw_orders
+12:37:59.914940 [debug]: Finished rendering [  0.00s] seed dbt_fin_ana_raw.raw_order_items [success]
+12:37:59.914973 [info ]: Finished rendering [  0.00s] (2 nodes, 0 skipped, 0 errors)
+12:37:59.915032 [info ]: Started running seed dbt_fin_ana_raw.raw_order_items
+12:38:01.212747 [debug]: Applying DROP to: `meu-mvp-dbt`.`dbt_fin_ana_raw`.`raw_order_items`
+12:38:01.215418 [debug]: create_debug_span(...).entered() took 26.943µs
+12:38:01.235403 [debug]: Applying DROP to: `meu-mvp-dbt`.`dbt_fin_ana_raw`.`raw_orders`
+12:38:01.237599 [debug]: create_debug_span(...).entered() took 27.849µs
+12:38:02.949345 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 1.733789586s
+12:38:02.950717 [debug]: reader.schema() took 1.921µs
+12:38:02.959164 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 1.743695328s
+12:38:02.959209 [debug]: concat_batches + normalize_result_column_names took 5.357µs
+12:38:02.959227 [debug]: record_current_span_status_from_attrs took 11.124µs
+12:38:02.959242 [debug]: Query executed on node seed.jaffle_shop.raw_order_items:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "seed.jaffle_shop.raw_order_items", "profile_name": "finance_project", "target_name": "dev"} */
+
+    drop table if exists `meu-mvp-dbt`.`dbt_fin_ana_raw`.`raw_order_items`
+
+12:38:02.959325 [debug]: drop(query_span_guard) (span exit/export) took 91.834µs
+12:38:02.961047 [debug]: create_debug_span(...).entered() took 16.355µs
+12:38:03.583413 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 2.345703556s
+12:38:03.583465 [debug]: reader.schema() took 1.386µs
+12:38:03.591484 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 2.353839457s
+12:38:03.591522 [debug]: concat_batches + normalize_result_column_names took 4.466µs
+12:38:03.591538 [debug]: record_current_span_status_from_attrs took 10.448µs
+12:38:03.591552 [debug]: Query executed on node seed.jaffle_shop.raw_orders:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "seed.jaffle_shop.raw_orders", "profile_name": "finance_project", "target_name": "dev"} */
+
+    drop table if exists `meu-mvp-dbt`.`dbt_fin_ana_raw`.`raw_orders`
+
+12:38:03.591587 [debug]: drop(query_span_guard) (span exit/export) took 43.29µs
+12:38:03.593333 [debug]: create_debug_span(...).entered() took 16.281µs
+12:38:07.146524 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 3.553041521s
+12:38:07.146577 [debug]: reader.schema() took 1.665µs
+12:38:07.152675 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 3.559312627s
+12:38:07.152705 [debug]: concat_batches + normalize_result_column_names took 3.633µs
+12:38:07.152720 [debug]: record_current_span_status_from_attrs took 9.349µs
+12:38:07.152734 [debug]: Query executed on node seed.jaffle_shop.raw_orders:
+
+12:38:07.152765 [debug]: drop(query_span_guard) (span exit/export) took 40.133µs
+12:38:07.154879 [debug]: create_debug_span(...).entered() took 15.862µs
+12:38:09.501744 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 2.346765668s
+12:38:09.501808 [debug]: reader.schema() took 1.257µs
+12:38:09.966922 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 2.811989176s
+12:38:09.967030 [debug]: concat_batches + normalize_result_column_names took 47.185µs
+12:38:09.967051 [debug]: record_current_span_status_from_attrs took 11.901µs
+12:38:09.967066 [debug]: Query executed on node seed.jaffle_shop.raw_orders:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "seed.jaffle_shop.raw_orders", "profile_name": "finance_project", "target_name": "dev"} */
+
+    alter table `meu-mvp-dbt`.`dbt_fin_ana_raw`.`raw_orders` set OPTIONS()
+  
+12:38:09.967308 [debug]: drop(query_span_guard) (span exit/export) took 248.014µs
+12:38:09.969898 [debug]: Writing runtime SQL for node "seed.jaffle_shop.raw_orders"
+12:38:09.973411 [debug]: processing request
+12:38:10.219988 [info ]: Finished running [ 10.31s] seed dbt_fin_ana_raw.raw_orders [success]
+12:38:10.220172 [info ]:  Succeeded seed  dbt_fin_ana_raw.raw_orders (table) [1 of 2 in 10.30s]
+12:38:11.054007 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 8.092803625s
+12:38:11.054106 [debug]: reader.schema() took 1.837µs
+12:38:11.063872 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 8.102779986s
+12:38:11.063941 [debug]: concat_batches + normalize_result_column_names took 4.451µs
+12:38:11.063965 [debug]: record_current_span_status_from_attrs took 11.002µs
+12:38:11.063982 [debug]: Query executed on node seed.jaffle_shop.raw_order_items:
+
+12:38:11.064066 [debug]: drop(query_span_guard) (span exit/export) took 91.61µs
+12:38:11.067296 [debug]: create_debug_span(...).entered() took 28.93µs
+12:38:13.495200 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 2.427674939s
+12:38:13.495266 [debug]: reader.schema() took 1.775µs
+12:38:14.181646 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 3.114278339s
+12:38:14.181879 [debug]: concat_batches + normalize_result_column_names took 43.655µs
+12:38:14.181900 [debug]: record_current_span_status_from_attrs took 10.855µs
+12:38:14.181914 [debug]: Query executed on node seed.jaffle_shop.raw_order_items:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "seed.jaffle_shop.raw_order_items", "profile_name": "finance_project", "target_name": "dev"} */
+
+    alter table `meu-mvp-dbt`.`dbt_fin_ana_raw`.`raw_order_items` set OPTIONS()
+  
+12:38:14.181952 [debug]: drop(query_span_guard) (span exit/export) took 46.174µs
+12:38:14.184048 [debug]: Writing runtime SQL for node "seed.jaffle_shop.raw_order_items"
+12:38:14.186549 [debug]: processing request
+12:38:14.378781 [info ]: Finished running [ 14.46s] seed dbt_fin_ana_raw.raw_order_items [success]
+12:38:14.379006 [info ]: Finished running [ 14.46s] (2 nodes, 0 skipped, 0 errors)
+12:38:14.379059 [info ]:  Succeeded seed  dbt_fin_ana_raw.raw_order_items (table) [2 of 2 in 14.46s]
+12:38:14.379620 [debug]: processing request
+12:38:21.380699 [info ]: 
+==================== Execution Summary =====================
+Finished 'seed' successfully for target 'dev' [34.1s]
+Processed: 2 seeds
+Summary: 2 total | 2 success
+==================== 2026-11-13T12:38:25.006753Z | 01a1d4ea-91ec-7981-be7b-613ac7b33212 ====================
+12:38:25.006934 [info ]: dbt 2.0.11
+12:38:25.007196 [info ]: Started loading project
+12:38:25.008019 [info ]: Loading ~/.dbt/profiles.yml
+12:38:25.013911 [info ]: Loading packages.yml
+12:38:25.014672 [debug]:    Started loading packages
+12:38:25.018379 [debug]:     Loaded [  0.00s] packages
+12:38:25.019485 [info ]: Finished loading project [  0.01s]
+12:38:25.019920 [info ]: Started parsing (6 nodes)
+12:38:25.093344 [debug]:    Started building model nodes
+12:38:25.093391 [debug]:   Finished [  0.00s] building model nodes
+12:38:25.093865 [debug]:    Started resolving data tests
+12:38:25.093898 [debug]:   Finished [  0.00s] resolving data tests
+12:38:25.094197 [debug]:    Started building model nodes
+12:38:25.094205 [debug]:   Finished [  0.00s] building model nodes
+12:38:25.094601 [debug]:    Started resolving data tests
+12:38:25.094621 [debug]:   Finished [  0.00s] resolving data tests
+12:38:25.094884 [debug]:    Started building model nodes
+12:38:25.094891 [debug]:   Finished [  0.00s] building model nodes
+12:38:25.095241 [debug]:    Started resolving data tests
+12:38:25.095256 [debug]:   Finished [  0.00s] resolving data tests
+12:38:25.095548 [debug]: Finished parsing models/marts/schema.yml [  0.00s]
+12:38:25.113703 [debug]: Finished parsing models/intermediate/int_order_items_enriched.sql [  0.00s]
+12:38:25.115751 [debug]: Finished parsing models/marts/fct_daily_gmv.sql [  0.00s]
+12:38:25.116711 [debug]: Finished parsing models/staging/stg_order_items.sql [  0.00s]
+12:38:25.117310 [debug]: Finished parsing models/staging/stg_orders.sql [  0.00s]
+12:38:25.117504 [debug]:    Started building model nodes
+12:38:25.120666 [debug]:   Finished [  0.00s] building model nodes
+12:38:25.122153 [debug]:    Started resolving data tests
+12:38:25.122854 [debug]: Finished parsing tests/assert_gmv_is_positive.sql [  0.00s]
+12:38:25.123648 [debug]: Finished parsing target/generic_tests/not_null_fct_daily_gmv_gmv.sql [  0.00s]
+12:38:25.127918 [debug]: Finished parsing target/generic_tests/not_null_fct_daily_gmv_order_date.sql [  0.00s]
+12:38:25.128362 [debug]: Finished parsing target/generic_tests/unique_fct_daily_gmv_order_date.sql [  0.00s]
+12:38:25.129731 [debug]:   Finished [  0.01s] resolving data tests
+12:38:25.130619 [debug]:    Started typechecking macros
+12:38:25.592716 [debug]:   Finished [  0.46s] typechecking macros
+12:38:25.594774 [info ]: Finished parsing [  0.57s] (6 nodes, 0 skipped, 0 errors)
+12:38:31.423436 [debug]: processing request
+12:38:31.612891 [info ]: dbt State is enabled (endpoint https://api.state.dbt.com:443, defer_to prod)
+12:38:31.614170 [info ]: Started scheduling
+12:38:31.614456 [info ]: Finished scheduling [  0.00s]
+12:38:31.621438 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "meu-mvp-dbt", schema: "dbt_fin_ana_raw", table: "raw_order_items" }) and interval: None
+12:38:31.621608 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "meu-mvp-dbt", schema: "dbt_fin_ana_raw", table: "raw_orders" }) and interval: None
+12:38:31.625252 [info ]:    Started downloading referenced relations (1 items)
+12:38:31.625705 [debug]: BigQuery driver resolved: bigquery 0.21.0.dev+dbt0.21.23
+12:38:31.660106 [debug]:    Started downloading `meu-mvp-dbt`.`dbt_fin_ana`
+12:38:38.906918 [debug]: Downloaded [  7.25s] `meu-mvp-dbt`.`dbt_fin_ana`
+12:38:38.908015 [info ]:   Finished [  7.28s] downloading referenced relations (1 items)
+12:38:38.952895 [info ]: Started building task graph
+12:38:38.953173 [info ]: Finished building task graph [  0.00s]
+12:38:39.305872 [debug]: borrow_tlocal_connection() took 8.564µs
+12:38:39.307703 [debug]: create_debug_span(...).entered() took 23.256µs
+12:38:39.308562 [debug]: processing request
+12:38:39.311979 [debug]: create_debug_span(...).entered() took 26.493µs
+12:38:39.313208 [debug]: create_debug_span(...).entered() took 21.7µs
+12:38:42.898604 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 3.585347835s
+12:38:42.898665 [debug]: reader.schema() took 1.923µs
+12:38:43.160028 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 3.847576279s
+12:38:43.160089 [debug]: reader.schema() took 1.718µs
+12:38:43.604368 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 4.296584191s
+12:38:43.604479 [debug]: reader.schema() took 1.762µs
+12:38:43.736024 [debug]: batch-consume loop (for res in reader) took 837.305593ms
+12:38:43.741963 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 4.428721577s
+12:38:43.742095 [debug]: concat_batches + normalize_result_column_names took 58.557µs
+12:38:43.742120 [debug]: record_current_span_status_from_attrs took 13.785µs
+12:38:43.742141 [debug]: Query executed on node unknown:
+SELECT
+                 legacy.dataset_id AS table_schema,
+                 legacy.table_id AS table_name,
+                 IF(info.table_type = 'EXTERNAL', NULL, TIMESTAMP_MILLIS(legacy.last_modified_time)) AS last_altered,
+                 (legacy.type = 2) AS is_view
+             FROM `meu-mvp-dbt`.`dbt_fin_ana_raw`.__TABLES__ legacy
+             LEFT JOIN `meu-mvp-dbt`.`dbt_fin_ana_raw`.INFORMATION_SCHEMA.TABLES info
+               ON info.table_schema = legacy.dataset_id
+              AND info.table_name = legacy.table_id
+12:38:43.742207 [debug]: drop(query_span_guard) (span exit/export) took 78.722µs
+12:38:44.020076 [debug]: batch-consume loop (for res in reader) took 859.939691ms
+12:38:44.024398 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 4.711989039s
+12:38:44.024472 [debug]: concat_batches + normalize_result_column_names took 38.122µs
+12:38:44.024490 [debug]: record_current_span_status_from_attrs took 10.706µs
+12:38:44.024513 [debug]: Query executed on node unknown:
+SELECT
+                 legacy.dataset_id AS table_schema,
+                 legacy.table_id AS table_name,
+                 IF(info.table_type = 'EXTERNAL', NULL, TIMESTAMP_MILLIS(legacy.last_modified_time)) AS last_altered,
+                 (legacy.type = 2) AS is_view
+             FROM `meu-mvp-dbt`.`dbt_fin_ana`.__TABLES__ legacy
+             LEFT JOIN `meu-mvp-dbt`.`dbt_fin_ana`.INFORMATION_SCHEMA.TABLES info
+               ON info.table_schema = legacy.dataset_id
+              AND info.table_name = legacy.table_id
+12:38:44.024558 [debug]: drop(query_span_guard) (span exit/export) took 60.765µs
+12:38:44.649998 [debug]: batch-consume loop (for res in reader) took 1.045460538s
+12:38:44.654821 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 5.347076959s
+12:38:44.654929 [debug]: concat_batches + normalize_result_column_names took 15.664µs
+12:38:44.654950 [debug]: record_current_span_status_from_attrs took 12.913µs
+12:38:44.654973 [debug]: Query executed on node unknown:
+SELECT UNIX_MILLIS(CURRENT_TIMESTAMP())
+12:38:44.655018 [debug]: drop(query_span_guard) (span exit/export) took 54.095µs
+12:38:44.655096 [debug]: adapter.execute() (full call, incl. adbc_execute_with_options) took 5.349183685s
+12:38:44.655536 [info ]: Started rendering (4 nodes)
+12:38:44.655914 [info ]: Started model dbt_fin_ana.stg_orders
+12:38:44.655949 [debug]: Started rendering model dbt_fin_ana.stg_orders
+12:38:44.656034 [info ]: Started model dbt_fin_ana.stg_order_items
+12:38:44.656048 [debug]: Started rendering model dbt_fin_ana.stg_order_items
+12:38:44.658215 [debug]: Compiled SQL for node model.jaffle_shop.stg_orders at target/compiled/jaffle_shop/models/staging/stg_orders.sql
+12:38:44.658502 [debug]: Compiled SQL for node model.jaffle_shop.stg_order_items at target/compiled/jaffle_shop/models/staging/stg_order_items.sql
+12:38:44.658574 [debug]: Finished rendering [  0.00s] model dbt_fin_ana.stg_orders [success]
+12:38:44.658798 [info ]: Started analyzing (4 nodes)
+12:38:44.658868 [debug]: Started analyzing model dbt_fin_ana.stg_orders
+12:38:44.658921 [debug]: Finished rendering [  0.00s] model dbt_fin_ana.stg_order_items [success]
+12:38:44.658961 [debug]: Started analyzing model dbt_fin_ana.stg_order_items
+12:38:44.689341 [debug]: Finished analyzing [  0.03s] model dbt_fin_ana.stg_order_items [success]
+12:38:44.689551 [info ]: Started running (4 nodes)
+12:38:44.689613 [info ]: Started running model dbt_fin_ana.stg_order_items
+12:38:44.689655 [debug]: Finished analyzing [  0.03s] model dbt_fin_ana.stg_orders [success]
+12:38:44.689701 [info ]: Started model dbt_fin_ana.int_order_items_enriched
+12:38:44.689723 [debug]: Started rendering model dbt_fin_ana.int_order_items_enriched
+12:38:44.689793 [info ]: Started running model dbt_fin_ana.stg_orders
+12:38:44.691406 [debug]: Compiled SQL for node model.jaffle_shop.int_order_items_enriched at target/compiled/jaffle_shop/models/intermediate/int_order_items_enriched.sql
+12:38:44.691518 [debug]: Finished rendering [  0.00s] model dbt_fin_ana.int_order_items_enriched [success]
+12:38:44.691586 [debug]: Started analyzing model dbt_fin_ana.int_order_items_enriched
+12:38:44.699679 [debug]: Finished analyzing [  0.01s] model dbt_fin_ana.int_order_items_enriched [success]
+12:38:44.699811 [info ]: Started model dbt_fin_ana.fct_daily_gmv
+12:38:44.699827 [debug]: Started rendering model dbt_fin_ana.fct_daily_gmv
+12:38:44.701886 [debug]: Compiled SQL for node model.jaffle_shop.fct_daily_gmv at target/compiled/jaffle_shop/models/marts/fct_daily_gmv.sql
+12:38:44.702016 [debug]: Finished rendering [  0.00s] model dbt_fin_ana.fct_daily_gmv [success]
+12:38:44.702098 [info ]: Finished rendering [  0.05s] (4 nodes, 0 skipped, 0 errors)
+12:38:44.702146 [debug]: Started analyzing model dbt_fin_ana.fct_daily_gmv
+12:38:44.717756 [debug]: Finished analyzing [  0.02s] model dbt_fin_ana.fct_daily_gmv [success]
+12:38:44.717907 [info ]: Finished analyzing [  0.06s] (4 nodes, 0 skipped, 0 errors)
+12:38:50.257972 [debug]: processing request
+12:38:50.258084 [debug]: processing request
+12:38:50.491973 [info ]: Finished running [  5.80s] model dbt_fin_ana.stg_order_items [reused]
+12:38:50.492153 [info ]:     Reused model dbt_fin_ana.stg_order_items (view - No new changes on any upstreams) [2 of 4]
+12:38:50.500944 [info ]: Finished running [  5.81s] model dbt_fin_ana.stg_orders [reused]
+12:38:50.501018 [info ]:     Reused model dbt_fin_ana.stg_orders (view - No new changes on any upstreams) [1 of 4]
+12:38:50.501312 [info ]: Started running model dbt_fin_ana.int_order_items_enriched
+12:38:51.095328 [debug]: processing request
+12:38:51.320665 [info ]: Finished running [  0.82s] model dbt_fin_ana.int_order_items_enriched [reused]
+12:38:51.320807 [info ]:     Reused model dbt_fin_ana.int_order_items_enriched (view - No new changes on any upstreams) [3 of 4]
+12:38:51.320941 [info ]: Started running model dbt_fin_ana.fct_daily_gmv
+12:38:51.322666 [debug]: create_debug_span(...).entered() took 28.151µs
+12:38:54.309235 [debug]: processing request
+12:38:54.315122 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 2.992241523s
+12:38:54.315189 [debug]: reader.schema() took 1.726µs
+12:38:54.320107 [debug]: batch-consume loop (for res in reader) took 4.89393ms
+12:38:54.323474 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 3.000703628s
+12:38:54.323574 [debug]: concat_batches + normalize_result_column_names took 34.842µs
+12:38:54.323606 [debug]: record_current_span_status_from_attrs took 10.568µs
+12:38:54.323962 [debug]: Query executed on node unknown:
+SELECT
+    table_catalog,
+    table_schema,
+    table_name,
+    view_definition
+FROM `meu-mvp-dbt`.`dbt_fin_ana_raw`.INFORMATION_SCHEMA.VIEWS
+WHERE table_name IN ('raw_order_items', 'raw_orders')
+12:38:54.324114 [debug]: drop(query_span_guard) (span exit/export) took 158.454µs
+12:38:54.324837 [debug]: processing request
+12:38:54.662795 [debug]: Invalid value for on_schema_change (None) specified. Setting default value of ignore.
+12:38:54.666101 [debug]: Writing runtime sql for node "model.jaffle_shop.fct_daily_gmv"
+12:38:54.667214 [debug]: create_debug_span(...).entered() took 21.516µs
+12:38:58.552223 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 3.884724253s
+12:38:58.552288 [debug]: reader.schema() took 1.847µs
+12:38:59.075119 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 4.407811713s
+12:38:59.075357 [debug]: concat_batches + normalize_result_column_names took 23.92µs
+12:38:59.075379 [debug]: record_current_span_status_from_attrs took 12.089µs
+12:38:59.075396 [debug]: Query executed on node model.jaffle_shop.fct_daily_gmv:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.jaffle_shop.fct_daily_gmv", "profile_name": "finance_project", "target_name": "dev"} */
+
+
+    create table `meu-mvp-dbt`.`dbt_fin_ana`.`fct_daily_gmv`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      
+
+with order_details as (
+    select * from `meu-mvp-dbt`.`dbt_fin_ana`.`int_order_items_enriched`
+    where status = 'completed'
+),
+daily_metrics as (
+    select
+        order_date,
+        sum(line_total) as gmv,
+        count(distinct order_id) as total_orders,
+        sum(line_total) / nullif(count(distinct order_id), 0) as aov
+    from order_details
+    group by 1
+)
+
+select * from daily_metrics
+
+
+    );
+12:38:59.075493 [debug]: drop(query_span_guard) (span exit/export) took 107.564µs
+12:38:59.077779 [debug]: processing request
+12:38:59.282737 [info ]: Finished running [  7.96s] model dbt_fin_ana.fct_daily_gmv [success]
+12:38:59.282893 [info ]: Finished running [ 14.59s] (4 nodes, 3 skipped, 0 errors)
+12:38:59.282979 [info ]:  Succeeded model dbt_fin_ana.fct_daily_gmv (incremental) [4 of 4 in 7.98s]
+12:38:59.283632 [debug]: processing request
+12:39:07.572649 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' successfully for target 'dev' [42.6s]
+Processed: 4 models
+Summary: 4 total | 1 success | 3 reused
+==================== 2026-11-13T12:39:09.848124Z | 01a1d4eb-4113-7b12-a19b-0dc3451666ea ====================
+12:39:09.848333 [info ]: dbt 2.0.11
+12:39:09.848623 [info ]: Started loading project
+12:39:09.849420 [info ]: Loading ~/.dbt/profiles.yml
+12:39:09.870317 [info ]: Loading packages.yml
+12:39:09.871558 [debug]:    Started loading packages
+12:39:09.876158 [debug]:     Loaded [  0.00s] packages
+12:39:09.877168 [info ]: Finished loading project [  0.03s]
+12:39:09.877615 [info ]: Started parsing (6 nodes)
+12:39:09.959859 [debug]:    Started building model nodes
+12:39:09.959925 [debug]:   Finished [  0.00s] building model nodes
+12:39:09.959860 [debug]:    Started building model nodes
+12:39:09.960099 [debug]:   Finished [  0.00s] building model nodes
+12:39:09.960469 [debug]:    Started resolving data tests
+12:39:09.960618 [debug]:    Started resolving data tests
+12:39:09.963179 [debug]:   Finished [  0.00s] resolving data tests
+12:39:09.963341 [debug]:   Finished [  0.00s] resolving data tests
+12:39:09.963768 [debug]:    Started building model nodes
+12:39:09.966370 [debug]:   Finished [  0.00s] building model nodes
+12:39:09.966889 [debug]:    Started resolving data tests
+12:39:09.966924 [debug]:   Finished [  0.00s] resolving data tests
+12:39:09.967446 [debug]: Finished parsing models/marts/schema.yml [  0.00s]
+12:39:09.971390 [debug]: Finished parsing models/intermediate/int_order_items_enriched.sql [  0.00s]
+12:39:09.973691 [debug]: Finished parsing models/marts/fct_daily_gmv.sql [  0.00s]
+12:39:09.974141 [debug]: Finished parsing models/staging/stg_order_items.sql [  0.00s]
+12:39:09.974707 [debug]: Finished parsing models/staging/stg_orders.sql [  0.00s]
+12:39:09.974826 [debug]:    Started building model nodes
+12:39:09.979674 [debug]:   Finished [  0.00s] building model nodes
+12:39:09.980954 [debug]:    Started resolving data tests
+12:39:09.981391 [debug]: Finished parsing tests/assert_gmv_is_positive.sql [  0.00s]
+12:39:09.981922 [debug]: Finished parsing target/generic_tests/not_null_fct_daily_gmv_gmv.sql [  0.00s]
+12:39:09.982296 [debug]: Finished parsing target/generic_tests/not_null_fct_daily_gmv_order_date.sql [  0.00s]
+12:39:09.982719 [debug]: Finished parsing target/generic_tests/unique_fct_daily_gmv_order_date.sql [  0.00s]
+12:39:09.984180 [debug]:   Finished [  0.00s] resolving data tests
+12:39:09.985094 [debug]:    Started typechecking macros
+12:39:10.186072 [debug]:   Finished [  0.20s] typechecking macros
+12:39:10.187606 [info ]: Finished parsing [  0.31s] (6 nodes, 0 skipped, 0 errors)
+12:39:15.629075 [debug]: processing request
+12:39:15.797078 [info ]: dbt State is enabled (endpoint https://api.state.dbt.com:443, defer_to prod)
+12:39:15.798457 [info ]: Started scheduling
+12:39:15.798673 [info ]: Finished scheduling [  0.00s]
+12:39:15.801516 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "meu-mvp-dbt", schema: "dbt_fin_ana", table: "fct_daily_gmv" }) and interval: None
+12:39:15.840876 [info ]: Started building task graph
+12:39:15.841120 [info ]: Finished building task graph [  0.00s]
+12:39:15.846321 [debug]: BigQuery driver resolved: bigquery 0.21.0.dev+dbt0.21.23
+12:39:15.847717 [debug]: processing request
+12:39:15.874951 [debug]: borrow_tlocal_connection() took 28.664743ms
+12:39:15.876885 [debug]: create_debug_span(...).entered() took 35.189µs
+12:39:15.876987 [debug]: create_debug_span(...).entered() took 29.858µs
+12:39:15.877166 [debug]: create_debug_span(...).entered() took 7.917µs
+12:39:17.911016 [debug]: Query executed on node unknown:
+SELECT
+                 legacy.dataset_id AS table_schema,
+                 legacy.table_id AS table_name,
+                 IF(info.table_type = 'EXTERNAL', NULL, TIMESTAMP_MILLIS(legacy.last_modified_time)) AS last_altered,
+                 (legacy.type = 2) AS is_view
+             FROM `meu-mvp-dbt`.`dbt_fin_ana_dbt_test__audit`.__TABLES__ legacy
+             LEFT JOIN `meu-mvp-dbt`.`dbt_fin_ana_dbt_test__audit`.INFORMATION_SCHEMA.TABLES info
+               ON info.table_schema = legacy.dataset_id
+              AND info.table_name = legacy.table_id
+12:39:19.891420 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 4.014348104s
+12:39:19.891548 [debug]: reader.schema() took 1.763µs
+12:39:20.286915 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 4.409576531s
+12:39:20.286976 [debug]: reader.schema() took 1.053µs
+12:39:20.795794 [debug]: batch-consume loop (for res in reader) took 904.149203ms
+12:39:20.799962 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 4.922937914s
+12:39:20.800072 [debug]: concat_batches + normalize_result_column_names took 74.097µs
+12:39:20.800091 [debug]: record_current_span_status_from_attrs took 11.516µs
+12:39:20.800106 [debug]: Query executed on node unknown:
+SELECT
+                 legacy.dataset_id AS table_schema,
+                 legacy.table_id AS table_name,
+                 IF(info.table_type = 'EXTERNAL', NULL, TIMESTAMP_MILLIS(legacy.last_modified_time)) AS last_altered,
+                 (legacy.type = 2) AS is_view
+             FROM `meu-mvp-dbt`.`dbt_fin_ana`.__TABLES__ legacy
+             LEFT JOIN `meu-mvp-dbt`.`dbt_fin_ana`.INFORMATION_SCHEMA.TABLES info
+               ON info.table_schema = legacy.dataset_id
+              AND info.table_name = legacy.table_id
+12:39:20.800169 [debug]: drop(query_span_guard) (span exit/export) took 70.902µs
+12:39:21.155941 [debug]: batch-consume loop (for res in reader) took 868.926473ms
+12:39:21.159586 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 5.282316609s
+12:39:21.159618 [debug]: concat_batches + normalize_result_column_names took 8.991µs
+12:39:21.159642 [debug]: record_current_span_status_from_attrs took 10.663µs
+12:39:21.159654 [debug]: Query executed on node unknown:
+SELECT UNIX_MILLIS(CURRENT_TIMESTAMP())
+12:39:21.159684 [debug]: drop(query_span_guard) (span exit/export) took 37.126µs
+12:39:21.159743 [debug]: adapter.execute() (full call, incl. adbc_execute_with_options) took 5.284607586s
+12:39:21.160021 [info ]: Started rendering (4 nodes)
+12:39:21.160141 [info ]: Started test dbt_fin_ana_dbt_test__audit.unique_fct_daily_gmv_order_date
+12:39:21.160159 [debug]: Started rendering test dbt_fin_ana_dbt_test__audit.unique_fct_daily_gmv_order_date
+12:39:21.160209 [info ]: Started test dbt_fin_ana_dbt_test__audit.not_null_fct_daily_gmv_order_date
+12:39:21.160218 [debug]: Started rendering test dbt_fin_ana_dbt_test__audit.not_null_fct_daily_gmv_order_date
+12:39:21.160234 [info ]: Started test dbt_fin_ana_dbt_test__audit.not_null_fct_daily_gmv_gmv
+12:39:21.160242 [debug]: Started rendering test dbt_fin_ana_dbt_test__audit.not_null_fct_daily_gmv_gmv
+12:39:21.160259 [info ]: Started test dbt_fin_ana_dbt_test__audit.assert_gmv_is_positive
+12:39:21.160268 [debug]: Started rendering test dbt_fin_ana_dbt_test__audit.assert_gmv_is_positive
+12:39:21.162787 [debug]: Compiled SQL for node test.jaffle_shop.assert_gmv_is_positive at target/compiled/jaffle_shop/tests/assert_gmv_is_positive.sql
+12:39:21.162965 [debug]: Finished rendering [  0.00s] test dbt_fin_ana_dbt_test__audit.assert_gmv_is_positive [success]
+12:39:21.163079 [info ]: Started analyzing (4 nodes)
+12:39:21.163132 [debug]: Started analyzing test dbt_fin_ana_dbt_test__audit.assert_gmv_is_positive
+12:39:21.163682 [debug]: Compiled SQL for node test.jaffle_shop.unique_fct_daily_gmv_order_date.df3dd9f029 at target/compiled/jaffle_shop/target/generic_tests/unique_fct_daily_gmv_order_date.sql
+12:39:21.165127 [debug]: Compiled SQL for node test.jaffle_shop.not_null_fct_daily_gmv_order_date.d99d78689d at target/compiled/jaffle_shop/target/generic_tests/not_null_fct_daily_gmv_order_date.sql
+12:39:21.167851 [debug]: Finished rendering [  0.01s] test dbt_fin_ana_dbt_test__audit.unique_fct_daily_gmv_order_date [success]
+12:39:21.167943 [debug]: Started analyzing test dbt_fin_ana_dbt_test__audit.unique_fct_daily_gmv_order_date
+12:39:21.167974 [debug]: Finished rendering [  0.01s] test dbt_fin_ana_dbt_test__audit.not_null_fct_daily_gmv_order_date [success]
+12:39:21.168010 [debug]: Started analyzing test dbt_fin_ana_dbt_test__audit.not_null_fct_daily_gmv_order_date
+12:39:21.168390 [debug]: Compiled SQL for node test.jaffle_shop.not_null_fct_daily_gmv_gmv.499dcbaf83 at target/compiled/jaffle_shop/target/generic_tests/not_null_fct_daily_gmv_gmv.sql
+12:39:21.170749 [debug]: Finished analyzing [  0.01s] test dbt_fin_ana_dbt_test__audit.assert_gmv_is_positive [success]
+12:39:21.170852 [info ]: Started running (4 nodes)
+12:39:21.170896 [info ]: Started running test dbt_fin_ana_dbt_test__audit.assert_gmv_is_positive
+12:39:21.171393 [debug]: create_debug_span(...).entered() took 12.816µs
+12:39:21.171786 [debug]: Finished rendering [  0.01s] test dbt_fin_ana_dbt_test__audit.not_null_fct_daily_gmv_gmv [success]
+12:39:21.171868 [info ]: Finished rendering [  0.01s] (4 nodes, 0 skipped, 0 errors)
+12:39:21.171920 [debug]: Started analyzing test dbt_fin_ana_dbt_test__audit.not_null_fct_daily_gmv_gmv
+12:39:21.172306 [debug]: Finished analyzing [  0.00s] test dbt_fin_ana_dbt_test__audit.not_null_fct_daily_gmv_gmv [success]
+12:39:21.172377 [info ]: Started running test dbt_fin_ana_dbt_test__audit.not_null_fct_daily_gmv_gmv
+12:39:21.172710 [debug]: Finished analyzing [  0.00s] test dbt_fin_ana_dbt_test__audit.not_null_fct_daily_gmv_order_date [success]
+12:39:21.172790 [info ]: Started running test dbt_fin_ana_dbt_test__audit.not_null_fct_daily_gmv_order_date
+12:39:21.172889 [debug]: create_debug_span(...).entered() took 16.449µs
+12:39:21.174371 [debug]: Finished analyzing [  0.01s] test dbt_fin_ana_dbt_test__audit.unique_fct_daily_gmv_order_date [success]
+12:39:21.174731 [debug]: create_debug_span(...).entered() took 13.429µs
+12:39:21.174947 [info ]: Finished analyzing [  0.01s] (4 nodes, 0 skipped, 0 errors)
+12:39:21.175149 [info ]: Started running test dbt_fin_ana_dbt_test__audit.unique_fct_daily_gmv_order_date
+12:39:21.177520 [debug]: create_debug_span(...).entered() took 28.92µs
+12:39:23.548564 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 2.377090427s
+12:39:23.548625 [debug]: reader.schema() took 2.509µs
+12:39:23.554286 [debug]: batch-consume loop (for res in reader) took 5.640785ms
+12:39:23.558329 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 2.386911131s
+12:39:23.558503 [debug]: concat_batches + normalize_result_column_names took 147.131µs
+12:39:23.558591 [debug]: record_current_span_status_from_attrs took 12.1µs
+12:39:23.558653 [debug]: Query executed on node unknown:
+SELECT
+    table_catalog,
+    table_schema,
+    table_name,
+    view_definition
+FROM `meu-mvp-dbt`.`dbt_fin_ana`.INFORMATION_SCHEMA.VIEWS
+WHERE table_name IN ('fct_daily_gmv')
+12:39:23.558738 [debug]: drop(query_span_guard) (span exit/export) took 91.837µs
+12:39:23.559387 [debug]: processing request
+12:39:23.809461 [debug]: Writing runtime sql for node "test.jaffle_shop.assert_gmv_is_positive"
+12:39:23.811713 [debug]: create_debug_span(...).entered() took 32.096µs
+12:39:23.924639 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 2.749603422s
+12:39:23.924694 [debug]: reader.schema() took 1.916µs
+12:39:23.929013 [debug]: batch-consume loop (for res in reader) took 4.288352ms
+12:39:23.932826 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 2.757832184s
+12:39:23.932884 [debug]: concat_batches + normalize_result_column_names took 32.215µs
+12:39:23.932902 [debug]: record_current_span_status_from_attrs took 8.944µs
+12:39:23.932912 [debug]: Query executed on node unknown:
+SELECT
+    table_catalog,
+    table_schema,
+    table_name,
+    view_definition
+FROM `meu-mvp-dbt`.`dbt_fin_ana`.INFORMATION_SCHEMA.VIEWS
+WHERE table_name IN ('fct_daily_gmv')
+12:39:23.932946 [debug]: drop(query_span_guard) (span exit/export) took 39.228µs
+12:39:23.933360 [debug]: processing request
+12:39:24.017203 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 2.842633151s
+12:39:24.017264 [debug]: reader.schema() took 1.936µs
+12:39:24.021155 [debug]: batch-consume loop (for res in reader) took 3.856992ms
+12:39:24.025193 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 2.852263901s
+12:39:24.025260 [debug]: concat_batches + normalize_result_column_names took 39.388µs
+12:39:24.025277 [debug]: record_current_span_status_from_attrs took 11.104µs
+12:39:24.025291 [debug]: Query executed on node unknown:
+SELECT
+    table_catalog,
+    table_schema,
+    table_name,
+    view_definition
+FROM `meu-mvp-dbt`.`dbt_fin_ana`.INFORMATION_SCHEMA.VIEWS
+WHERE table_name IN ('fct_daily_gmv')
+12:39:24.025353 [debug]: drop(query_span_guard) (span exit/export) took 47.464µs
+12:39:24.025991 [debug]: processing request
+12:39:24.182719 [debug]: Writing runtime sql for node "test.jaffle_shop.not_null_fct_daily_gmv_order_date.d99d78689d"
+12:39:24.184355 [debug]: create_debug_span(...).entered() took 28.54µs
+12:39:24.296630 [debug]: Writing runtime sql for node "test.jaffle_shop.not_null_fct_daily_gmv_gmv.499dcbaf83"
+12:39:24.297943 [debug]: create_debug_span(...).entered() took 25.425µs
+12:39:24.961570 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 3.783949121s
+12:39:24.961633 [debug]: reader.schema() took 1.601µs
+12:39:24.970887 [debug]: batch-consume loop (for res in reader) took 9.23251ms
+12:39:24.978988 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 3.801415593s
+12:39:24.979090 [debug]: concat_batches + normalize_result_column_names took 49.794µs
+12:39:24.979111 [debug]: record_current_span_status_from_attrs took 11.985µs
+12:39:24.979127 [debug]: Query executed on node unknown:
+SELECT
+    table_catalog,
+    table_schema,
+    table_name,
+    view_definition
+FROM `meu-mvp-dbt`.`dbt_fin_ana`.INFORMATION_SCHEMA.VIEWS
+WHERE table_name IN ('fct_daily_gmv')
+12:39:24.979178 [debug]: drop(query_span_guard) (span exit/export) took 60.174µs
+12:39:24.980572 [debug]: processing request
+12:39:25.240868 [debug]: Writing runtime sql for node "test.jaffle_shop.unique_fct_daily_gmv_order_date.df3dd9f029"
+12:39:25.242273 [debug]: create_debug_span(...).entered() took 28.624µs
+12:39:25.846963 [debug]: processing request
+12:39:26.037197 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 2.224943916s
+12:39:26.037248 [debug]: reader.schema() took 1.597µs
+12:39:26.513326 [debug]: batch-consume loop (for res in reader) took 476.033076ms
+12:39:26.515749 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 2.703997622s
+12:39:26.515823 [debug]: concat_batches + normalize_result_column_names took 14.152µs
+12:39:26.515845 [debug]: record_current_span_status_from_attrs took 10.952µs
+12:39:26.515857 [debug]: Query executed on node test.jaffle_shop.assert_gmv_is_positive:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "test.jaffle_shop.assert_gmv_is_positive", "profile_name": "finance_project", "target_name": "dev"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  select
+    order_date,
+    gmv
+from `meu-mvp-dbt`.`dbt_fin_ana`.`fct_daily_gmv`
+where gmv < 0 or gmv is null
+  
+  
+      
+    ) dbt_internal_test
+12:39:26.515898 [debug]: drop(query_span_guard) (span exit/export) took 49.091µs
+12:39:26.517213 [debug]: processing request
+12:39:26.717139 [info ]: Finished running [  5.55s] test dbt_fin_ana_dbt_test__audit.assert_gmv_is_positive [pass]
+12:39:26.717288 [info ]:     Passed test  assert_gmv_is_positive [4 of 4 in 5.55s]
+12:39:27.532959 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 3.234699607s
+12:39:27.533016 [debug]: reader.schema() took 1.968µs
+12:39:28.015749 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 3.82888047s
+12:39:28.015821 [debug]: reader.schema() took 1.672µs
+12:39:28.017629 [debug]: batch-consume loop (for res in reader) took 484.591159ms
+12:39:28.022901 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 3.724899055s
+12:39:28.022939 [debug]: concat_batches + normalize_result_column_names took 12.956µs
+12:39:28.022957 [debug]: record_current_span_status_from_attrs took 11.799µs
+12:39:28.022973 [debug]: Query executed on node test.jaffle_shop.not_null_fct_daily_gmv_gmv.499dcbaf83:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "test.jaffle_shop.not_null_fct_daily_gmv_gmv.499dcbaf83", "profile_name": "finance_project", "target_name": "dev"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select gmv
+from `meu-mvp-dbt`.`dbt_fin_ana`.`fct_daily_gmv`
+where gmv is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+12:39:28.023020 [debug]: drop(query_span_guard) (span exit/export) took 55.621µs
+12:39:28.024850 [debug]: processing request
+12:39:28.226310 [info ]: Finished running [  7.05s] test dbt_fin_ana_dbt_test__audit.not_null_fct_daily_gmv_gmv [pass]
+12:39:28.226685 [info ]:     Passed test  not_null_fct_daily_gmv_gmv [3 of 4 in 7.06s]
+12:39:28.469795 [debug]: batch-consume loop (for res in reader) took 453.927265ms
+12:39:28.474039 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 4.289640304s
+12:39:28.474088 [debug]: concat_batches + normalize_result_column_names took 16.572µs
+12:39:28.474108 [debug]: record_current_span_status_from_attrs took 13.75µs
+12:39:28.474203 [debug]: Query executed on node test.jaffle_shop.not_null_fct_daily_gmv_order_date.d99d78689d:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "test.jaffle_shop.not_null_fct_daily_gmv_order_date.d99d78689d", "profile_name": "finance_project", "target_name": "dev"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select order_date
+from `meu-mvp-dbt`.`dbt_fin_ana`.`fct_daily_gmv`
+where order_date is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+12:39:28.474267 [debug]: drop(query_span_guard) (span exit/export) took 152.359µs
+12:39:28.475031 [debug]: processing request
+12:39:28.675707 [info ]: Finished running [  7.50s] test dbt_fin_ana_dbt_test__audit.not_null_fct_daily_gmv_order_date [pass]
+12:39:28.675882 [info ]:     Passed test  not_null_fct_daily_gmv_order_date [2 of 4 in 7.51s]
+12:39:28.806861 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 3.564322035s
+12:39:28.806929 [debug]: reader.schema() took 1.454µs
+12:39:29.190777 [debug]: batch-consume loop (for res in reader) took 383.796788ms
+12:39:29.196043 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 3.953694715s
+12:39:29.196090 [debug]: concat_batches + normalize_result_column_names took 15.818µs
+12:39:29.196109 [debug]: record_current_span_status_from_attrs took 10.945µs
+12:39:29.196125 [debug]: Query executed on node test.jaffle_shop.unique_fct_daily_gmv_order_date.df3dd9f029:
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "test.jaffle_shop.unique_fct_daily_gmv_order_date.df3dd9f029", "profile_name": "finance_project", "target_name": "dev"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select order_date as unique_field
+  from `meu-mvp-dbt`.`dbt_fin_ana`.`fct_daily_gmv`
+  where order_date is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+12:39:29.196168 [debug]: drop(query_span_guard) (span exit/export) took 53.911µs
+12:39:29.197044 [debug]: processing request
+12:39:29.381750 [info ]: Finished running [  8.21s] test dbt_fin_ana_dbt_test__audit.unique_fct_daily_gmv_order_date [pass]
+12:39:29.381930 [info ]: Finished running [  8.21s] (4 nodes, 0 skipped, 0 errors)
+12:39:29.381978 [info ]:     Passed test  unique_fct_daily_gmv_order_date [1 of 4 in 8.22s]
+12:39:29.382573 [debug]: processing request
+12:39:43.208090 [info ]: 
+==================== Execution Summary =====================
+Finished 'test' successfully for target 'dev' [33.4s]
+Processed: 4 tests
+Summary: 4 total | 4 success

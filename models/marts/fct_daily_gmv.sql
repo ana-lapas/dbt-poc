@@ -1,15 +1,12 @@
-with order_details as (
-    select
-        o.order_id,
-        o.order_date,
-        i.quantity,
-        i.price,
-        (i.quantity * i.price) as line_total
-    from {{ ref('stg_orders') }} o
-    join {{ ref('stg_order_items') }} i on o.order_id = i.order_id
-    where o.status = 'completed' -- E-commerce logic: exclude returned orders
-),
+{{ config(
+    materialized='incremental',
+    unique_key='order_date'
+) }}
 
+with order_details as (
+    select * from {{ ref('int_order_items_enriched') }}
+    where status = 'completed'
+),
 daily_metrics as (
     select
         order_date,
@@ -21,3 +18,7 @@ daily_metrics as (
 )
 
 select * from daily_metrics
+
+{% if is_incremental() %}
+  where order_date > (select max(order_date) from {{ this }})
+{% endif %}
